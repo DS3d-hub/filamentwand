@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#176b6b">
+  <meta name="description" content="DS3d – Meine Filamentwand. Echte Benchys, echte Farben: die Filamentsammlung nach Hersteller, Material, Farbe und Filamentsorte entdecken.">
+  <title>DS3d – Meine Filamentwand</title>
+  <link rel="icon" href="assets/boat.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog-core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#sammlung">Zur Sammlung springen</a>
+  <header class="masthead wrap">
+    <a class="brand-mark" href="./" aria-label="DS3d – Startseite"><img src="assets/boat.svg" alt="" width="82" height="82"></a>
+    <div class="intro">
+      <p class="eyebrow">Ein kleines Boot. Unzählige Möglichkeiten.</p>
+      <h1>DS3d <span>– Meine Filamentwand</span></h1>
+      <p class="description">Meine bunte Flotte in einem Hafen voller Filament: echte Drucke, echte Farben und für jedes Filament ein kleines Boot.</p>
+      <p class="tagline">Schwimmfähigkeit ungeprüft, Filamentliebe garantiert.</p>
+    </div>
+  </header>
+  <main class="wrap" id="sammlung">
+    <section class="catalog-tools" aria-label="Sammlung durchsuchen und filtern">
+      <div class="search-row">
+        <div class="search-field">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+          <label for="search" class="sr-only">Farbe oder Filament suchen</label>
+          <input id="search" type="search" placeholder="Farbe oder Filament suchen …" autocomplete="off" disabled>
+          <button id="clear-search" type="button" aria-label="Suchtext löschen" hidden>×</button>
+        </div>
+        <button id="toggle-filters" class="filter-toggle" type="button" aria-expanded="false" aria-controls="filter-panel"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg><span>Filter</span><span id="mobile-filter-count" class="count-bubble" hidden></span><span class="chevron">⌄</span></button>
+      </div>
+      <div class="filter-panel" id="filter-panel">
+        <div class="filter-fields">
+          <label>Hersteller<select id="manufacturer" disabled><option value="">Alle Hersteller</option></select></label>
+          <label>Material<select id="material" disabled><option value="">Alle Materialien</option></select></label>
+          <label>Farbe<select id="color" disabled><option value="">Alle Farben</option></select></label>
+          <label>Filamentsorte<select id="type" disabled><option value="">Alle Sorten</option></select></label>
+        </div>
+        <button id="reset" type="button" class="reset"><span aria-hidden="true">↺</span> Filter zurücksetzen</button>
+      </div>
+    </section>
+    <section aria-label="Filamentgalerie">
+      <div class="collection-bar">
+        <div><h2>Die bunte Flotte</h2><p id="result-count" role="status" aria-live="polite">Die Sammlung wird geladen …</p></div>
+        <label class="sort-label"><span>Sortieren</span><select id="sort" disabled><option value="collection">Sammlung</option><option value="name">Farbe A–Z</option><option value="manufacturer">Hersteller A–Z</option><option value="material">Material A–Z</option></select></label>
+      </div>
+      <div id="active-filters" class="active-filters" aria-label="Aktive Filter" hidden></div>
+      <div id="gallery" class="gallery" aria-busy="true"></div>
+      <div id="empty" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3>Hier liegt gerade kein Boot vor Anker.</h3><p>Für diese Auswahl gibt es noch keinen Treffer. Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p><button class="primary-button" id="empty-reset" type="button">Alle Benchys anzeigen</button></div>
+      <div id="load-error" class="empty-state" hidden><h3>Die Sammlung konnte nicht geladen werden.</h3><p>Bitte prüfe deine Verbindung und versuche es noch einmal.</p><button class="primary-button" id="retry" type="button">Erneut laden</button></div>
+      <noscript><p>Bitte aktiviere JavaScript, damit du die Fotos und Filter dieser Galerie nutzen kannst.</p></noscript>
+    </section>
+  </main>
+  <footer class="wrap site-footer"><div><strong>DS3d</strong><span>Mit Filamentliebe gedruckt.</span></div><p><span id="collection-stats"></span><span class="footer-note">Fotos zeigen die tatsächlichen Drucke. Die Farbwiedergabe hängt von Licht und Bildschirm ab.</span></p></footer>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="detail-shell">
+      <button class="dialog-close" id="close-detail" aria-label="Foto schließen" type="button">×</button>
+      <div class="detail-photo"><img id="detail-image" alt=""><button id="previous" class="photo-nav previous" aria-label="Vorheriges Benchy" type="button">‹</button><button id="next" class="photo-nav next" aria-label="Nächstes Benchy" type="button">›</button></div>
+      <div class="detail-info"><p id="detail-maker" class="eyebrow"></p><h2 id="detail-title"></h2><div id="detail-tags" class="detail-tags"></div><p class="photo-hint">Originalaufnahme des gedruckten Benchys</p></div>
+    </div>
+  </dialog>
+</body>
+</html>

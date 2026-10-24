@@ -1,0 +1,1760 @@
+{
+  "title": "DS3d – Meine Filamentwand",
+  "description": "Meine bunte Flotte in einem Hafen voller Filament: echte Drucke, echte Farben und für jedes Filament ein kleines Boot. Schwimmfähigkeit ungeprüft, Filamentliebe garantiert",
+  "updated": "2026-10-24",
+  "items": [
+    {
+      "id": "db0bce41d522",
+      "name": "Violett – Silky",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Violett"
+      ],
+      "image": "assets/benchys/db0bce41d522.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "c0b5041ef7c6",
+      "name": "Himbeerrot – Silky",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/c0b5041ef7c6.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "d9509911def0",
+      "name": "Leichtes Rot – Silky",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/d9509911def0.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "d5bd60facc9f",
+      "name": "Orangebraun – rPLA",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "rPLA"
+      ],
+      "colors": [
+        "Orange",
+        "Braun"
+      ],
+      "image": "assets/benchys/d5bd60facc9f.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "c596008555bc",
+      "name": "Goldbraun – Silky",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Braun"
+      ],
+      "image": "assets/benchys/c596008555bc.webp",
+      "width": 1500,
+      "height": 1300
+    },
+    {
+      "id": "daa5a03f5e0b",
+      "name": "Grün – Wizard",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Wizard"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/daa5a03f5e0b.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "e29e6e282372",
+      "name": "Minzcoktail – Pastel",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Pastel"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/e29e6e282372.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "ffcfc6482919",
+      "name": "Bronzegold – Silky",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Gelb",
+        "Braun"
+      ],
+      "image": "assets/benchys/ffcfc6482919.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "fa232ae38bb2",
+      "name": "Rubinrot – rPLA",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "rPLA"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/fa232ae38bb2.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "e9776f1aa51c",
+      "name": "Polarblau – Pastel",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Pastel"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/e9776f1aa51c.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "e9934de92374",
+      "name": "Rose – Pastel",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Pastel"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/e9934de92374.webp",
+      "width": 1500,
+      "height": 1302
+    },
+    {
+      "id": "c0233987e977",
+      "name": "Azurblau – rPLA",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "rPLA"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/c0233987e977.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "daa49af5d082",
+      "name": "Kohle – Wizard",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Wizard"
+      ],
+      "colors": [
+        "Schwarz",
+        "Grau"
+      ],
+      "image": "assets/benchys/daa49af5d082.webp",
+      "width": 1500,
+      "height": 1301
+    },
+    {
+      "id": "f23f6739c359",
+      "name": "Lila-Weiß – Mystic Silky",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Violett",
+        "Weiß",
+        "Mehrfarbig"
+      ],
+      "image": "assets/benchys/f23f6739c359.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f1842d122a27",
+      "name": "Rot-Schwarz – Mystic Silky",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Rot",
+        "Schwarz",
+        "Mehrfarbig"
+      ],
+      "image": "assets/benchys/f1842d122a27.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fc1ea0b2d007",
+      "name": "Grün-Himbeerrot – Mystic Silky",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Grün",
+        "Rot",
+        "Mehrfarbig"
+      ],
+      "image": "assets/benchys/fc1ea0b2d007.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "cf67d3e1c853",
+      "name": "Capriblau – Matt",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/cf67d3e1c853.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c8626c461b2b",
+      "name": "Eisengrau – Matt",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/c8626c461b2b.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e26fe3b4f8ab",
+      "name": "Opalgrün – Glitzer",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/e26fe3b4f8ab.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f25ab51d6994",
+      "name": "Perlblau – Glitzer",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/f25ab51d6994.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "cc61e352a729",
+      "name": "Oxidrot – Glitzer",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/cc61e352a729.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "f71f9b84ee04",
+      "name": "Transparent Gold – Glitzer",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Glitzer",
+        "Transparent"
+      ],
+      "colors": [
+        "Gelb",
+        "Transparent"
+      ],
+      "image": "assets/benchys/f71f9b84ee04.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "cd74a00fd1bd",
+      "name": "Flip Flop Grün – Glitzer",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/cd74a00fd1bd.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "fa9dfbdf6a1f",
+      "name": "Platinsilber – Glitzer",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/fa9dfbdf6a1f.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d3f99cef1bc3",
+      "name": "Kaminrot – Matt",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/d3f99cef1bc3.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "cf5b2927079f",
+      "name": "Violett – Matt",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Violett"
+      ],
+      "image": "assets/benchys/cf5b2927079f.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "eec9477302a9",
+      "name": "Schwarz – Glitzer",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/eec9477302a9.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "db62aad98b3a",
+      "name": "Gold – Glitzer",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Gelb"
+      ],
+      "image": "assets/benchys/db62aad98b3a.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "fb4d3899cb57",
+      "name": "Blattgrün – ASA-x",
+      "manufacturer": "Redline",
+      "material": "ASA",
+      "types": [
+        "ASA-x"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/fb4d3899cb57.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fd4bbd8ea3a5",
+      "name": "Magenta – Basic",
+      "manufacturer": "Redline",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/fd4bbd8ea3a5.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "d858268c57bc",
+      "name": "Dunkelsilber – ASA-x",
+      "manufacturer": "Redline",
+      "material": "ASA",
+      "types": [
+        "ASA-x"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/d858268c57bc.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "ecb15e1c7178",
+      "name": "Schwarz – ASA-x",
+      "manufacturer": "Redline",
+      "material": "ASA",
+      "types": [
+        "ASA-x"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/ecb15e1c7178.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fc53bf87e537",
+      "name": "Eisengrau – ASA-x",
+      "manufacturer": "Redline",
+      "material": "ASA",
+      "types": [
+        "ASA-x"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/fc53bf87e537.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "ccb34754bbb2",
+      "name": "gedämpftes Blau – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/ccb34754bbb2.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c193d95134a4",
+      "name": "Sanfte Blüte – rPLA",
+      "manufacturer": "Recycling Fabrik",
+      "material": "PLA",
+      "types": [
+        "rPLA"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/c193d95134a4.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "e6d84a2ae3b4",
+      "name": "püriertes Einhorn – rPLA",
+      "manufacturer": "Recycling Fabrik",
+      "material": "PLA",
+      "types": [
+        "rPLA"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/e6d84a2ae3b4.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e9783fb4fb48",
+      "name": "Fuchsia – PLA UV",
+      "manufacturer": "eSun",
+      "material": "PLA",
+      "types": [
+        "UV"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/e9783fb4fb48.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d3cf98c14ea0",
+      "name": "Lila – Standard",
+      "manufacturer": "eSun",
+      "material": "PLA",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Violett"
+      ],
+      "image": "assets/benchys/d3cf98c14ea0.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d93e1964b93b",
+      "name": "Knochenweiß – Standard",
+      "manufacturer": "eSun",
+      "material": "PLA",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/d93e1964b93b.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "eb11f13b0056",
+      "name": "Olive Green – Matt",
+      "manufacturer": "Kexcelled",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/eb11f13b0056.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "eed35e673604",
+      "name": "White – Standard",
+      "manufacturer": "Creality",
+      "material": "PLA",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/eed35e673604.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fefdefae8804",
+      "name": "Amethyst – Candy",
+      "manufacturer": "Nobufil",
+      "material": "PETG",
+      "types": [
+        "Candy"
+      ],
+      "colors": [
+        "Violett"
+      ],
+      "image": "assets/benchys/fefdefae8804.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "ecf8519fff1e",
+      "name": "Blaugrün – Standard",
+      "manufacturer": "Nobufil",
+      "material": "PETG",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Türkis"
+      ],
+      "image": "assets/benchys/ecf8519fff1e.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fed25d1d6755",
+      "name": "Rosé – Candy",
+      "manufacturer": "Nobufil",
+      "material": "PETG",
+      "types": [
+        "Candy"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/fed25d1d6755.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "d0d9ce6862f2",
+      "name": "Pearl White – Standard",
+      "manufacturer": "Nobufil",
+      "material": "PETG",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/d0d9ce6862f2.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e793060c35dd",
+      "name": "Amber – Candy",
+      "manufacturer": "Nobufil",
+      "material": "PETG",
+      "types": [
+        "Candy"
+      ],
+      "colors": [
+        "Orange"
+      ],
+      "image": "assets/benchys/e793060c35dd.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d81ffb994ec2",
+      "name": "Glimmer Pink – PLA+ · Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PLA+",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/d81ffb994ec2.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f97209fa6916",
+      "name": "Türkis – PLA+ · Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PLA+",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Türkis"
+      ],
+      "image": "assets/benchys/f97209fa6916.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "ef4726f5642f",
+      "name": "Metallic Aubergine – PLA+",
+      "manufacturer": "Filament Unger",
+      "material": "PLA+",
+      "types": [
+        "Metallic"
+      ],
+      "colors": [
+        "Violett"
+      ],
+      "image": "assets/benchys/ef4726f5642f.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f87bd502ae69",
+      "name": "Anthrazitsilber – PLA+ · Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PLA+",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/f87bd502ae69.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f422f9bd5524",
+      "name": "Vanille – PLA+ · Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PLA+",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Gelb"
+      ],
+      "image": "assets/benchys/f422f9bd5524.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e68af9fb3af7",
+      "name": "Natur – PLA+ · Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PLA+",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/e68af9fb3af7.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "ebce980e7d8a",
+      "name": "Signalweiß – Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PETG",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/ebce980e7d8a.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "cf5fe769af62",
+      "name": "Rot – Transparent",
+      "manufacturer": "Filament Unger",
+      "material": "PETG",
+      "types": [
+        "Transparent"
+      ],
+      "colors": [
+        "Rot",
+        "Transparent"
+      ],
+      "image": "assets/benchys/cf5fe769af62.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "da1115b160d4",
+      "name": "Anthrazitsilber – Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PETG",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/da1115b160d4.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d9a2e11184d3",
+      "name": "Edelstahl – Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PETG",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/d9a2e11184d3.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fdd06a2ee7db",
+      "name": "Grün – Transparent",
+      "manufacturer": "Filament Unger",
+      "material": "PETG",
+      "types": [
+        "Transparent"
+      ],
+      "colors": [
+        "Grün",
+        "Transparent"
+      ],
+      "image": "assets/benchys/fdd06a2ee7db.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f4e8414a313d",
+      "name": "Wasserblau – Standard",
+      "manufacturer": "Filament Unger",
+      "material": "PETG",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/f4e8414a313d.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fd9a8640c315",
+      "name": "Grün – Glow in the Dark",
+      "manufacturer": "Filament Unger",
+      "material": "PLA",
+      "types": [
+        "Glow in the Dark"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/fd9a8640c315.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f35459364d31",
+      "name": "Rosig – Matt",
+      "manufacturer": "AzureFilm",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/f35459364d31.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "e04c97e2ff41",
+      "name": "Weiß – Matt",
+      "manufacturer": "AzureFilm",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/e04c97e2ff41.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fca9f5f9e43d",
+      "name": "Minze – Matt",
+      "manufacturer": "AzureFilm",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/fca9f5f9e43d.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d24a761edec9",
+      "name": "Off White – Matt",
+      "manufacturer": "AzureFilm",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/d24a761edec9.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e6f3b6522022",
+      "name": "Salbei – Matt",
+      "manufacturer": "AzureFilm",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/e6f3b6522022.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fb1ea036ce90",
+      "name": "Bordeaux – Matt",
+      "manufacturer": "AzureFilm",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/fb1ea036ce90.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fe504741a0a9",
+      "name": "Hellrosa – TPU 95A",
+      "manufacturer": "Tinmorry",
+      "material": "TPU",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/fe504741a0a9.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "cff0eef41d81",
+      "name": "Metallisches Silber – TPU 95A",
+      "manufacturer": "Tinmorry",
+      "material": "TPU",
+      "types": [
+        "Metallic"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/cff0eef41d81.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f2aa94da4ba2",
+      "name": "Fluoreszierendes Rot – TPU 95A",
+      "manufacturer": "Tinmorry",
+      "material": "TPU",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/f2aa94da4ba2.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d3c822070e62",
+      "name": "Weiß – TPU 95A",
+      "manufacturer": "Tinmorry",
+      "material": "TPU",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/d3c822070e62.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c783c586282f",
+      "name": "Fluoreszierendes Blau – TPU 95A",
+      "manufacturer": "Tinmorry",
+      "material": "TPU",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/c783c586282f.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "c8e298a188d2",
+      "name": "Schwarz – TPU 95A",
+      "manufacturer": "Tinmorry",
+      "material": "TPU",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/c8e298a188d2.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "db8673872c42",
+      "name": "Orange – TPU 95A",
+      "manufacturer": "Tinmorry",
+      "material": "TPU",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Orange"
+      ],
+      "image": "assets/benchys/db8673872c42.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "e96714dd3b5c",
+      "name": "Lavendelrosa – Basic",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/e96714dd3b5c.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "efb17b190ce1",
+      "name": "Cyan – Basic",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Türkis"
+      ],
+      "image": "assets/benchys/efb17b190ce1.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d259512fca55",
+      "name": "Violett – Matt",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Violett"
+      ],
+      "image": "assets/benchys/d259512fca55.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "caf272dd0b6b",
+      "name": "Hellgrün – Matt",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/caf272dd0b6b.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d02a52f2cdef",
+      "name": "Hellrosa – Matt",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/d02a52f2cdef.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f3b345875e11",
+      "name": "Hellblau – Matt",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/f3b345875e11.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "f6efa2b10dea",
+      "name": "Navy Blau – Matt",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/f6efa2b10dea.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d1e18c77b1ef",
+      "name": "Galaxy Grün – Glitzer",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/d1e18c77b1ef.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f81f1ab1503a",
+      "name": "Galaxy Braun – Glitzer",
+      "manufacturer": "Tinmorry",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Braun"
+      ],
+      "image": "assets/benchys/f81f1ab1503a.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e7deeb730e37",
+      "name": "Walnuss – Holz",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Holz"
+      ],
+      "colors": [
+        "Braun"
+      ],
+      "image": "assets/benchys/e7deeb730e37.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c942fb45f57f",
+      "name": "Schwarz – TPU 90A",
+      "manufacturer": "Bambu Lab",
+      "material": "TPU",
+      "types": [
+        "Standard"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/c942fb45f57f.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "eaa7111d21c4",
+      "name": "Eisblau – Transparent",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Transparent"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/eaa7111d21c4.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f0ab0cc66713",
+      "name": "Onyx-Schwarz – Glitzer",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Glitzer"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/f0ab0cc66713.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "dcd5017db5cd",
+      "name": "Gold-Rosa – Silk+",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/dcd5017db5cd.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f6c146f905a5",
+      "name": "Gold – Silk+",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Gelb"
+      ],
+      "image": "assets/benchys/f6c146f905a5.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "ec69f3b712aa",
+      "name": "Südstrand – Silk Multi",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Silk / Silky"
+      ],
+      "colors": [
+        "Mehrfarbig"
+      ],
+      "image": "assets/benchys/ec69f3b712aa.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "dfb81c1b075e",
+      "name": "Heißes Pink – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/dfb81c1b075e.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "ea3ea6c1966d",
+      "name": "Silber – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/ea3ea6c1966d.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "da818615b90d",
+      "name": "Mistelzweiggrün – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/da818615b90d.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c2d628e1ddf0",
+      "name": "Indigo-Violett – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Violett"
+      ],
+      "image": "assets/benchys/c2d628e1ddf0.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "d7946bb75a6d",
+      "name": "Kakaobraun – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Braun"
+      ],
+      "image": "assets/benchys/d7946bb75a6d.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "cd4f7b23cff6",
+      "name": "Rot – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/cd4f7b23cff6.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c95e6b0d0dd9",
+      "name": "Schwarz – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/c95e6b0d0dd9.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fafbe15602fc",
+      "name": "Jade-Weiß – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/fafbe15602fc.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e08655a4b82a",
+      "name": "Kürbis-Orange – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Orange"
+      ],
+      "image": "assets/benchys/e08655a4b82a.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "de70057c019e",
+      "name": "Grau – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/de70057c019e.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e2f7ede5bb67",
+      "name": "Cyan – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Türkis"
+      ],
+      "image": "assets/benchys/e2f7ede5bb67.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "fece86ae7301",
+      "name": "Beige – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/fece86ae7301.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e34b70167ee0",
+      "name": "Bambusgrün – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/e34b70167ee0.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c1f692262606",
+      "name": "Gelb – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Gelb"
+      ],
+      "image": "assets/benchys/c1f692262606.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f54a15358a53",
+      "name": "Dunkelgrau – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/f54a15358a53.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "ed5092458641",
+      "name": "Bronze – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Braun"
+      ],
+      "image": "assets/benchys/ed5092458641.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c671206d1470",
+      "name": "Blau – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/c671206d1470.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "de55278c89a9",
+      "name": "Braun – Basic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Basic"
+      ],
+      "colors": [
+        "Braun"
+      ],
+      "image": "assets/benchys/de55278c89a9.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "f94bbd7208cf",
+      "name": "Creme – HF",
+      "manufacturer": "Bambu Lab",
+      "material": "PETG",
+      "types": [
+        "HF"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/f94bbd7208cf.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "dab6772fb149",
+      "name": "Grau – HF",
+      "manufacturer": "Bambu Lab",
+      "material": "PETG",
+      "types": [
+        "HF"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/dab6772fb149.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "e3ae9e75d014",
+      "name": "Schwarz – HF",
+      "manufacturer": "Bambu Lab",
+      "material": "PETG",
+      "types": [
+        "HF"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/e3ae9e75d014.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d8a10eb3b4a3",
+      "name": "Weiß – HF",
+      "manufacturer": "Bambu Lab",
+      "material": "PETG",
+      "types": [
+        "HF"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/d8a10eb3b4a3.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "c4783ee3d162",
+      "name": "Rot – HF",
+      "manufacturer": "Bambu Lab",
+      "material": "PETG",
+      "types": [
+        "HF"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/c4783ee3d162.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "d9f96d63febd",
+      "name": "Kobaltblau – Metallic",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Metallic"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/d9f96d63febd.webp",
+      "width": 1500,
+      "height": 1306
+    },
+    {
+      "id": "ffc7316646ad",
+      "name": "Sakura-Pink – Matt",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Rosa"
+      ],
+      "image": "assets/benchys/ffc7316646ad.webp",
+      "width": 1500,
+      "height": 1304
+    },
+    {
+      "id": "c0601f54b828",
+      "name": "Kohlschwarz – Matt",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/c0601f54b828.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "edf996d4dbb9",
+      "name": "Dunkelrot – Matt",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/edf996d4dbb9.webp",
+      "width": 1500,
+      "height": 1305
+    },
+    {
+      "id": "ff541dc54fdd",
+      "name": "Glow in the Dark Grün",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA",
+      "types": [
+        "Glow in the Dark"
+      ],
+      "colors": [
+        "Grün"
+      ],
+      "image": "assets/benchys/ff541dc54fdd.webp",
+      "width": 1500,
+      "height": 1305
+    }
+  ]
+}
