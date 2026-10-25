@@ -586,7 +586,8 @@
       "image": "assets/benchys/ccb34754bbb2.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "unknown"
+      "availability": "out_of_stock",
+      "stockNote": "Bestellbar"
     },
     {
       "id": "c193d95134a4",
@@ -602,7 +603,7 @@
       "image": "assets/benchys/c193d95134a4.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "unknown"
+      "availability": "in_stock"
     },
     {
       "id": "e6d84a2ae3b4",
@@ -618,7 +619,7 @@
       "image": "assets/benchys/e6d84a2ae3b4.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "unknown"
+      "availability": "in_stock"
     },
     {
       "id": "e9783fb4fb48",
@@ -634,7 +635,7 @@
       "image": "assets/benchys/e9783fb4fb48.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "unknown"
+      "availability": "in_stock"
     },
     {
       "id": "d3cf98c14ea0",
@@ -650,7 +651,7 @@
       "image": "assets/benchys/d3cf98c14ea0.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "unknown"
+      "availability": "in_stock"
     },
     {
       "id": "d93e1964b93b",
@@ -666,7 +667,7 @@
       "image": "assets/benchys/d93e1964b93b.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "unknown"
+      "availability": "in_stock"
     },
     {
       "id": "eb11f13b0056",
