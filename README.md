@@ -23,3 +23,7 @@ Fotos und Texte stammen aus der persönlichen Filamentsammlung. Keine Lizenz zur
 Neue Einträge erhalten `addedAt` im Format JJJJ-MM-TT (Tag der ersten Veröffentlichung). Das Schild „Neu“ erscheint an diesem Tag und den acht folgenden Kalendertagen, gerechnet nach Europe/Berlin. Bestandsänderungen verlängern diesen Zeitraum nicht. Bisherige Einträge ohne Datum erhalten kein Schild.
 
 Die Merkliste speichert ausschließlich Eintrags-IDs im localStorage des jeweiligen Browsers. Sie wird weder übertragen noch geräteübergreifend synchronisiert. Ohne Speicherzugriff gilt sie nur für den Besuch. Filter zurücksetzen löscht keine gespeicherten Farben. Der Teilen-Button kopiert einen direkten Link zur Farbe, ohne die persönlichen Filter oder Merkliste; bei blockierter Zwischenablage erscheint ein kopierbares Linkfeld.
+
+## Farbvergleich
+
+Auf den Karten und im Fotodetail lassen sich bis zu vier Farben für den Vergleich auswählen. Die Auswahl bleibt beim Filtern und Wechseln zur Merkliste während des Seitenbesuchs erhalten. Ab zwei Farben öffnet die untere Auswahlleiste die Vergleichsansicht. Auf dem Handy stehen je zwei Fotos nebeneinander. Die Auswahl ist vorübergehend und wird nicht übertragen.

@@ -23,6 +23,8 @@ function materialGuide(material,detailed=false){
 const swatches={'Weiß':'#f4f0e2','Schwarz':'#333a3c','Grau':'#929895','Rot':'#bc4f50','Orange':'#dc9355','Gelb':'#d0ad58','Grün':'#82ac8b','Blau':'#6295b8','Türkis':'#53a2a5','Violett':'#9c7eb5','Rosa':'#dea0b0','Braun':'#9d7a5a','Transparent':'#d8e2e0','Mehrfarbig':'linear-gradient(135deg,#5d9c83,#a079ac,#d9a166)'};
 let items=[],state={},visible=[],data,focusedCard=null,photoId=null;
 const dialog=$('detail');
+const comparison=$('comparison');
+let compared=[],comparisonTrigger=null;
 const favoriteKey='ds3d-filamentwand-favorites-v1';
 let favorites=new Set(),favoriteStorage=true;
 try{const saved=JSON.parse(localStorage.getItem(favoriteKey)||'[]');if(Array.isArray(saved))favorites=new Set(saved.filter(id=>typeof id==='string'));}catch{favoriteStorage=false;}
@@ -67,7 +69,35 @@ function card(item,index){
   favorite.setAttribute('aria-pressed',String(favorites.has(item.id)));
   favorite.setAttribute('aria-label',`${item.name} ${favorites.has(item.id)?'aus der Merkliste entfernen':'merken'}`);
   favorite.onclick=()=>toggleFavorite(item.id);
-  button.onclick=()=>{focusedCard=button;showPhoto(item.id);};container.append(button,favorite);return container;
+  const compare=element('button','compare-pick',compared.includes(item.id)?'✓ Im Vergleich':'+ Vergleichen');compare.type='button';
+  compare.setAttribute('aria-label',`${item.name} ${compared.includes(item.id)?'aus dem Vergleich entfernen':'vergleichen'}`);compare.setAttribute('aria-pressed',String(compared.includes(item.id)));
+  compare.disabled=compared.length===4&&!compared.includes(item.id);compare.onclick=()=>toggleComparison(item.id);
+  button.onclick=()=>{focusedCard=button;showPhoto(item.id);};container.append(button,favorite,compare);return container;
+}
+function toggleComparison(id){
+  if(!items.some(item=>item.id===id))return;
+  if(compared.includes(id))compared=compared.filter(value=>value!==id);
+  else if(compared.length<4)compared.push(id);else return;
+  render();
+  if(!dialog.open&&!comparison.open){const card=[...$('gallery').children].find(node=>node.dataset.id===id);(card?.querySelector('.compare-pick')||$('open-comparison')).focus();}
+}
+function syncComparison(){
+  const selected=compared.map(id=>items.find(item=>item.id===id)).filter(Boolean);
+  $('compare-tray').hidden=!selected.length;document.body.classList.toggle('has-comparison',!!selected.length);
+  $('compare-count').textContent=`${selected.length} von 4 Farben`;$('open-comparison').disabled=selected.length<2;
+  $('compare-status').textContent=selected.length===4?'Vier Farben ausgewählt. Entferne eine Farbe, um eine andere hinzuzufügen.':selected.length===1?'Wähle noch eine Farbe für deine Kombination.':'';
+  $('compare-selection').replaceChildren(...selected.map(item=>{const chip=element('button','filter-chip',item.name+' ×');chip.type='button';chip.setAttribute('aria-label',`${item.name} aus der Auswahl entfernen`);chip.onclick=()=>toggleComparison(item.id);return chip;}));
+  const saved=compared.includes(photoId);$('detail-compare').textContent=saved?'✓ Im Vergleich':'+ Vergleichen';$('detail-compare').setAttribute('aria-pressed',String(saved));$('detail-compare').disabled=selected.length===4&&!saved;
+  $('comparison-hint').textContent=selected.length<2?'Wähle in der Galerie mindestens zwei Farben aus.':'So wirken deine Farben nebeneinander. Für eine andere Kombination kannst du einzelne Farben entfernen und weitere auswählen.';
+  const grid=$('comparison-grid');grid.style.setProperty('--compare-columns',Math.max(2,selected.length));
+  grid.replaceChildren(...selected.map(item=>{
+    const panel=element('article','comparison-card');
+    const visual=element('div','card-visual');const img=element('img');img.src=item.image;img.alt=`${item.name} von ${item.manufacturer}`;img.width=item.width;img.height=item.height;
+    const watermark=element('span','photo-watermark','DS3d · Meine Filamentwand');watermark.setAttribute('aria-hidden','true');visual.append(img,watermark);
+    const info=element('div','comparison-info');info.append(element('h3','card-title',item.name),element('p','card-meta',`${item.manufacturer} · ${item.material}`),element('p','comparison-type',item.types.join(' · ')),element('p',`stock-badge stock-${item.availability}`,stockLabels[item.availability]));
+    if(item.stockNote)info.append(element('p','stock-note',item.stockNote));
+    const remove=element('button','compare-remove','Entfernen');remove.type='button';remove.setAttribute('aria-label',`${item.name} aus dem Farbvergleich entfernen`);remove.onclick=()=>{toggleComparison(item.id);$('close-comparison').focus();};info.append(remove);panel.append(visual,info);return panel;
+  }));
 }
 function syncFavoriteControls(){
   $('favorites-count').textContent=items.filter(item=>favorites.has(item.id)).length;
@@ -102,12 +132,12 @@ function render(){
   });
   active.hidden=!active.childElementCount;
   const count=keys.filter(k=>state[k]).length;$('mobile-filter-count').hidden=!count;$('mobile-filter-count').textContent=count;
-  syncFavoriteControls();writeURL();
+  syncFavoriteControls();syncComparison();writeURL();
 }
 function showPhoto(id,updateURL=true){
   const item=items.find(x=>x.id===id);if(!item)return;
   photoId=id;
-  $('detail-new').hidden=!core.isNew(item);$('share-status').textContent='';$('share-fallback').hidden=true;syncFavoriteControls();
+  $('detail-new').hidden=!core.isNew(item);$('share-status').textContent='';$('share-fallback').hidden=true;syncFavoriteControls();syncComparison();
   $('detail-title').textContent=item.name;$('detail-maker').textContent=item.manufacturer;
   $('detail-image').src=item.image;$('detail-image').alt=`${item.name} von ${item.manufacturer}`;
   $('detail-image').parentElement.style.setProperty('--photo-ratio',item.width/item.height);
@@ -149,6 +179,12 @@ $('retry').onclick=load;
 $('favorites-view').onclick=()=>{state.favoritesOnly=!state.favoritesOnly;render();};
 $('detail-favorite').onclick=()=>toggleFavorite(photoId);
 $('share-photo').onclick=sharePhoto;
+$('detail-compare').onclick=()=>toggleComparison(photoId);
+$('open-comparison').onclick=()=>{if(compared.length<2)return;comparisonTrigger=$('open-comparison');syncComparison();comparison.showModal();};
+$('clear-comparison').onclick=()=>{compared=[];render();};
+$('close-comparison').onclick=()=>comparison.close();
+comparison.addEventListener('close',()=>{if(comparisonTrigger?.isConnected&&!comparisonTrigger.disabled)comparisonTrigger.focus();else $('search').focus();});
+comparison.addEventListener('click',event=>{if(event.target===comparison){const box=comparison.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)comparison.close();}});
 window.addEventListener('storage',event=>{if(event.key!==favoriteKey&&event.key!==null)return;try{const saved=JSON.parse(event.newValue||'[]');favorites=new Set(Array.isArray(saved)?saved.filter(id=>typeof id==='string'):[]);if(items.length)render();}catch{/* Keep the current list if another tab stores invalid data. */}});
 $('toggle-filters').onclick=()=>{const open=$('toggle-filters').getAttribute('aria-expanded')!=='true';$('toggle-filters').setAttribute('aria-expanded',String(open));$('filter-panel').classList.toggle('is-open',open);};
 $('close-detail').onclick=()=>dialog.close();

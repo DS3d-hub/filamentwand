@@ -9,9 +9,9 @@
   <title>DS3d – Meine Filamentwand</title>
   <link rel="icon" href="assets/boat.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=favorites-1">
-  <script src="catalog-core.js?v=favorites-1" defer></script>
-  <script src="app.js?v=favorites-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=compare-1">
+  <script src="catalog-core.js?v=compare-1" defer></script>
+  <script src="app.js?v=compare-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sammlung">Zur Sammlung springen</a>
@@ -54,6 +54,7 @@
         <label class="sort-label"><span>Sortieren</span><select id="sort" disabled><option value="collection">Sammlung</option><option value="name">Farbe A–Z</option><option value="manufacturer">Hersteller A–Z</option><option value="material">Material A–Z</option></select></label>
       </div>
       <div id="active-filters" class="active-filters" aria-label="Aktive Filter" hidden></div>
+      <p class="comparison-intro">Farben kombinieren? Wähle bei zwei bis vier Benchys „Vergleichen“.</p>
       <div id="gallery" class="gallery" aria-busy="true"></div>
       <div id="empty" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3 id="empty-title">Hier liegt gerade kein Boot vor Anker.</h3><p id="empty-description">Für diese Auswahl gibt es noch keinen Treffer. Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p><button class="primary-button" id="empty-reset" type="button">Alle Benchys anzeigen</button></div>
       <div id="load-error" class="empty-state" hidden><h3>Die Sammlung konnte nicht geladen werden.</h3><p>Bitte prüfe deine Verbindung und versuche es noch einmal.</p><button class="primary-button" id="retry" type="button">Erneut laden</button></div>
@@ -65,11 +66,17 @@
     </aside>
   </main>
   <footer class="wrap site-footer"><div><strong>DS3d</strong><span>Mit Filamentliebe gedruckt.</span></div><p><span id="collection-stats"></span><span class="footer-note">Fotos zeigen die tatsächlichen Drucke. Die Farbwiedergabe hängt von Licht und Bildschirm ab.</span></p></footer>
+  <aside id="compare-tray" class="compare-tray" aria-label="Farbauswahl zum Vergleichen" hidden>
+    <div class="compare-tray-inner"><div><strong id="compare-count"></strong><p id="compare-status" role="status" aria-live="polite"></p></div><div id="compare-selection" class="compare-selection"></div><div class="compare-tray-actions"><button id="open-comparison" class="primary-button" type="button" disabled>Farben vergleichen</button><button id="clear-comparison" class="reset" type="button">Auswahl leeren</button></div></div>
+  </aside>
+  <dialog id="comparison" class="comparison-dialog" aria-labelledby="comparison-title" aria-describedby="comparison-hint">
+    <div class="comparison-shell"><button id="close-comparison" class="dialog-close" type="button" aria-label="Farbvergleich schließen">×</button><p class="eyebrow">Deine Farbkombination</p><h2 id="comparison-title">Passen die zusammen?</h2><p id="comparison-hint"></p><div id="comparison-grid" class="comparison-grid"></div><p class="comparison-note">Echte Drucke im direkten Vergleich. Licht und Bildschirm beeinflussen die Farbwiedergabe. Die passende Materialkombination stimmen wir gemeinsam ab.</p></div>
+  </dialog>
   <dialog id="detail" aria-labelledby="detail-title">
     <div class="detail-shell">
       <button class="dialog-close" id="close-detail" aria-label="Foto schließen" type="button">×</button>
       <div class="detail-photo"><div class="detail-image-frame"><img id="detail-image" alt=""><span class="photo-watermark" aria-hidden="true">DS3d · Meine Filamentwand</span></div><button id="previous" class="photo-nav previous" aria-label="Vorheriges Benchy" type="button">‹</button><button id="next" class="photo-nav next" aria-label="Nächstes Benchy" type="button">›</button></div>
-      <div class="detail-info"><p id="detail-maker" class="eyebrow"></p><h2 id="detail-title"></h2><span id="detail-new" class="new-badge detail-new" hidden>Neu</span><p id="detail-stock" class="stock-badge"></p><p id="detail-stock-note" class="stock-note" hidden></p><div id="detail-tags" class="detail-tags"></div><div id="detail-material-guide"></div><div class="detail-actions"><button id="detail-favorite" class="action-button" type="button" aria-pressed="false">♡ <span id="detail-favorite-label">Merken</span></button><button id="share-photo" class="action-button" type="button">↗ Diese Farbe teilen</button></div><p id="share-status" class="share-status" role="status" aria-live="polite"></p><label id="share-fallback" class="share-fallback" hidden>Link zu dieser Farbe<input id="share-link" type="text" readonly></label><p class="photo-hint">Originalaufnahme des gedruckten Benchys</p></div>
+      <div class="detail-info"><p id="detail-maker" class="eyebrow"></p><h2 id="detail-title"></h2><span id="detail-new" class="new-badge detail-new" hidden>Neu</span><p id="detail-stock" class="stock-badge"></p><p id="detail-stock-note" class="stock-note" hidden></p><div id="detail-tags" class="detail-tags"></div><div id="detail-material-guide"></div><div class="detail-actions"><button id="detail-favorite" class="action-button" type="button" aria-pressed="false">♡ <span id="detail-favorite-label">Merken</span></button><button id="detail-compare" class="action-button" type="button" aria-pressed="false">+ Vergleichen</button><button id="share-photo" class="action-button" type="button">↗ Diese Farbe teilen</button></div><p id="share-status" class="share-status" role="status" aria-live="polite"></p><label id="share-fallback" class="share-fallback" hidden>Link zu dieser Farbe<input id="share-link" type="text" readonly></label><p class="photo-hint">Originalaufnahme des gedruckten Benchys</p></div>
     </div>
   </dialog>
 </body>
