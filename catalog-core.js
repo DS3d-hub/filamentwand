@@ -21,6 +21,17 @@
     });
     return counts;
   };
-  const api={normalize,matches,filter,sort,facet,compare};
+  const isNew=(item,now=new Date())=>{
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(item.addedAt||''))return false;
+    const added=new Date(item.addedAt+'T00:00:00Z');
+    if(!Number.isFinite(added.getTime())||added.toISOString().slice(0,10)!==item.addedAt)return false;
+    const parts=new Intl.DateTimeFormat('en',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);
+    const part=type=>parts.find(p=>p.type===type).value;
+    const today=`${part('year')}-${part('month')}-${part('day')}`;
+    const age=(new Date(today+'T00:00:00Z')-added)/86400000;
+    return age>=0&&age<9;
+  };
+  const photoURL=(base,id)=>{const url=new URL(base);url.search='';url.hash='';url.searchParams.set('benchy',id);return url.href;};
+  const api={normalize,matches,filter,sort,facet,compare,isNew,photoURL};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CatalogCore=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

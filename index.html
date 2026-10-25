@@ -9,9 +9,9 @@
   <title>DS3d – Meine Filamentwand</title>
   <link rel="icon" href="assets/boat.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=material-1">
-  <script src="catalog-core.js?v=stock-1" defer></script>
-  <script src="app.js?v=material-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=favorites-1">
+  <script src="catalog-core.js?v=favorites-1" defer></script>
+  <script src="app.js?v=favorites-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sammlung">Zur Sammlung springen</a>
@@ -33,8 +33,10 @@
           <input id="search" type="search" placeholder="Farbe oder Filament suchen …" autocomplete="off" disabled>
           <button id="clear-search" type="button" aria-label="Suchtext löschen" hidden>×</button>
         </div>
+        <button id="favorites-view" class="favorites-view" type="button" aria-pressed="false" disabled>♡ Merkliste <span id="favorites-count">0</span></button>
         <button id="toggle-filters" class="filter-toggle" type="button" aria-expanded="false" aria-controls="filter-panel"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg><span>Filter</span><span id="mobile-filter-count" class="count-bubble" hidden></span><span class="chevron">⌄</span></button>
       </div>
+      <p id="favorites-help" class="favorites-help"></p>
       <div class="filter-panel" id="filter-panel">
         <div class="filter-fields">
           <label>Hersteller<select id="manufacturer" disabled><option value="">Alle Hersteller</option></select></label>
@@ -53,7 +55,7 @@
       </div>
       <div id="active-filters" class="active-filters" aria-label="Aktive Filter" hidden></div>
       <div id="gallery" class="gallery" aria-busy="true"></div>
-      <div id="empty" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3>Hier liegt gerade kein Boot vor Anker.</h3><p>Für diese Auswahl gibt es noch keinen Treffer. Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p><button class="primary-button" id="empty-reset" type="button">Alle Benchys anzeigen</button></div>
+      <div id="empty" class="empty-state" hidden><span aria-hidden="true">⌕</span><h3 id="empty-title">Hier liegt gerade kein Boot vor Anker.</h3><p id="empty-description">Für diese Auswahl gibt es noch keinen Treffer. Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p><button class="primary-button" id="empty-reset" type="button">Alle Benchys anzeigen</button></div>
       <div id="load-error" class="empty-state" hidden><h3>Die Sammlung konnte nicht geladen werden.</h3><p>Bitte prüfe deine Verbindung und versuche es noch einmal.</p><button class="primary-button" id="retry" type="button">Erneut laden</button></div>
       <noscript><p>Bitte aktiviere JavaScript, damit du die Fotos und Filter dieser Galerie nutzen kannst.</p></noscript>
     </section>
@@ -67,7 +69,7 @@
     <div class="detail-shell">
       <button class="dialog-close" id="close-detail" aria-label="Foto schließen" type="button">×</button>
       <div class="detail-photo"><div class="detail-image-frame"><img id="detail-image" alt=""><span class="photo-watermark" aria-hidden="true">DS3d · Meine Filamentwand</span></div><button id="previous" class="photo-nav previous" aria-label="Vorheriges Benchy" type="button">‹</button><button id="next" class="photo-nav next" aria-label="Nächstes Benchy" type="button">›</button></div>
-      <div class="detail-info"><p id="detail-maker" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-stock" class="stock-badge"></p><p id="detail-stock-note" class="stock-note" hidden></p><div id="detail-tags" class="detail-tags"></div><div id="detail-material-guide"></div><p class="photo-hint">Originalaufnahme des gedruckten Benchys</p></div>
+      <div class="detail-info"><p id="detail-maker" class="eyebrow"></p><h2 id="detail-title"></h2><span id="detail-new" class="new-badge detail-new" hidden>Neu</span><p id="detail-stock" class="stock-badge"></p><p id="detail-stock-note" class="stock-note" hidden></p><div id="detail-tags" class="detail-tags"></div><div id="detail-material-guide"></div><div class="detail-actions"><button id="detail-favorite" class="action-button" type="button" aria-pressed="false">♡ <span id="detail-favorite-label">Merken</span></button><button id="share-photo" class="action-button" type="button">↗ Diese Farbe teilen</button></div><p id="share-status" class="share-status" role="status" aria-live="polite"></p><label id="share-fallback" class="share-fallback" hidden>Link zu dieser Farbe<input id="share-link" type="text" readonly></label><p class="photo-hint">Originalaufnahme des gedruckten Benchys</p></div>
     </div>
   </dialog>
 </body>

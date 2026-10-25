@@ -17,3 +17,9 @@ Nach Ergänzungen die geänderten Dateien veröffentlichen. Besucher erhalten au
 Dieses Verzeichnis ist die Wurzel des Website-Repositories. In den Repository-Einstellungen unter Pages als Quelle GitHub Actions auswählen. Der enthaltene Workflow veröffentlicht Änderungen auf `main`. Das Repository muss beim kostenlosen GitHub-Tarif öffentlich sein. Es dürfen keine privaten Sicherungen, Zugangsdaten oder Notion-Exporte in dieses Repository aufgenommen werden.
 
 Fotos und Texte stammen aus der persönlichen Filamentsammlung. Keine Lizenz zur Weiterverwendung der Fotos erteilt.
+
+## Neu, Merkliste und Teilen
+
+Neue Einträge erhalten `addedAt` im Format JJJJ-MM-TT (Tag der ersten Veröffentlichung). Das Schild „Neu“ erscheint an diesem Tag und den acht folgenden Kalendertagen, gerechnet nach Europe/Berlin. Bestandsänderungen verlängern diesen Zeitraum nicht. Bisherige Einträge ohne Datum erhalten kein Schild.
+
+Die Merkliste speichert ausschließlich Eintrags-IDs im localStorage des jeweiligen Browsers. Sie wird weder übertragen noch geräteübergreifend synchronisiert. Ohne Speicherzugriff gilt sie nur für den Besuch. Filter zurücksetzen löscht keine gespeicherten Farben. Der Teilen-Button kopiert einen direkten Link zur Farbe, ohne die persönlichen Filter oder Merkliste; bei blockierter Zwischenablage erscheint ein kopierbares Linkfeld.

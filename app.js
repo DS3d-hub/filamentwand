@@ -23,9 +23,13 @@ function materialGuide(material,detailed=false){
 const swatches={'Weiß':'#f4f0e2','Schwarz':'#333a3c','Grau':'#929895','Rot':'#bc4f50','Orange':'#dc9355','Gelb':'#d0ad58','Grün':'#82ac8b','Blau':'#6295b8','Türkis':'#53a2a5','Violett':'#9c7eb5','Rosa':'#dea0b0','Braun':'#9d7a5a','Transparent':'#d8e2e0','Mehrfarbig':'linear-gradient(135deg,#5d9c83,#a079ac,#d9a166)'};
 let items=[],state={},visible=[],data,focusedCard=null,photoId=null;
 const dialog=$('detail');
+const favoriteKey='ds3d-filamentwand-favorites-v1';
+let favorites=new Set(),favoriteStorage=true;
+try{const saved=JSON.parse(localStorage.getItem(favoriteKey)||'[]');if(Array.isArray(saved))favorites=new Set(saved.filter(id=>typeof id==='string'));}catch{favoriteStorage=false;}
+const heartIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
 const readState=()=>{
   const params=new URLSearchParams(location.search);
-  state={q:params.get('suche')||'',sort:params.get('sort')||'collection'};
+  state={q:params.get('suche')||'',sort:params.get('sort')||'collection',favoritesOnly:state.favoritesOnly||false};
   keys.forEach(key=>state[key]=params.get(key)||'');
   if(!['collection','name','manufacturer','material'].includes(state.sort))state.sort='collection';
   photoId=params.get('benchy');
@@ -50,23 +54,44 @@ function setupFilters(){
   });
 }
 function card(item,index){
-  const button=element('button','card');button.type='button';button.dataset.id=item.id;
+  const container=element('article','card');container.dataset.id=item.id;
+  const button=element('button','card-open');button.type='button';
   button.setAttribute('aria-label',`${item.name}, ${item.manufacturer}, ${item.material}, ${stockLabels[item.availability]} – Foto groß ansehen`);
   const visual=element('div','card-visual');
   const image=element('img');image.src=item.image;image.alt=`Gedrucktes Benchy: ${item.manufacturer}, ${item.name}`;image.width=item.width;image.height=item.height;image.loading=index<6?'eager':'lazy';image.decoding='async';
   visual.append(image);const watermark=element('span','photo-watermark','DS3d · Meine Filamentwand');watermark.setAttribute('aria-hidden','true');visual.append(watermark);const zoom=element('span','zoom-hint');zoom.setAttribute('aria-hidden','true');zoom.innerHTML='<svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7 10h6M10 7v6"/></svg>';visual.append(zoom);
   const body=element('div','card-body');const dot=element('span','color-dot');const swatch=item.colors.includes('Mehrfarbig')?swatches.Mehrfarbig:item.colors.length>1?'linear-gradient(135deg,'+item.colors.map(c=>swatches[c]||'#aeb7ae').join(',')+')':swatches[item.colors[0]]||'#aeb7ae';dot.style.setProperty('--swatch',swatch);dot.setAttribute('aria-hidden','true');
   const text=element('div');const stock=element('p',`stock-badge stock-${item.availability}`,stockLabels[item.availability]);text.append(element('h3','card-title',item.name),element('p','card-meta',`${item.manufacturer} · ${item.material}`),stock);if(item.stockNote)text.append(element('p','stock-note',item.stockNote));body.append(dot,text);button.append(visual,body);const guide=materialGuide(item.material);if(guide)button.append(guide);
-  button.onclick=()=>{focusedCard=button;showPhoto(item.id);};return button;
+  if(core.isNew(item))visual.append(element('span','new-badge','Neu'));
+  const favorite=element('button','favorite-button');favorite.type='button';favorite.innerHTML=heartIcon;
+  favorite.setAttribute('aria-pressed',String(favorites.has(item.id)));
+  favorite.setAttribute('aria-label',`${item.name} ${favorites.has(item.id)?'aus der Merkliste entfernen':'merken'}`);
+  favorite.onclick=()=>toggleFavorite(item.id);
+  button.onclick=()=>{focusedCard=button;showPhoto(item.id);};container.append(button,favorite);return container;
+}
+function syncFavoriteControls(){
+  $('favorites-count').textContent=items.filter(item=>favorites.has(item.id)).length;
+  $('favorites-view').setAttribute('aria-pressed',String(!!state.favoritesOnly));
+  $('favorites-help').textContent=favoriteStorage?'Deine Merkliste wird nur in diesem Browser auf deinem Gerät gespeichert.':'Deine Merkliste gilt nur für diesen Besuch, weil der Browser das Speichern nicht erlaubt.';
+  const saved=favorites.has(photoId);$('detail-favorite').setAttribute('aria-pressed',String(saved));$('detail-favorite-label').textContent=saved?'Gemerkt':'Merken';
+}
+function toggleFavorite(id){
+  if(favorites.has(id))favorites.delete(id);else favorites.add(id);
+  try{localStorage.setItem(favoriteKey,JSON.stringify([...favorites]));favoriteStorage=true;}catch{favoriteStorage=false;}
+  render();
+  if(!dialog.open){const replacement=[...$('gallery').children].find(node=>node.dataset.id===id);(replacement?.querySelector('.favorite-button')||$('favorites-view')).focus();}
 }
 function render(){
-  visible=core.sort(core.filter(items,state),state.sort);
+  const source=state.favoritesOnly?items.filter(item=>favorites.has(item.id)):items;
+  visible=core.sort(core.filter(source,state),state.sort);
   $('gallery').replaceChildren(...visible.map(card));$('gallery').setAttribute('aria-busy','false');
   $('result-count').textContent=visible.length===items.length?`${items.length} Benchys · ${new Set(items.map(x=>x.manufacturer)).size} Hersteller`:`${visible.length} von ${items.length} Benchys`;
   $('empty').hidden=visible.length>0;$('clear-search').hidden=!state.q;
+  $('empty-title').textContent=state.favoritesOnly&&!source.length?'Deine Merkliste wartet auf ihre ersten Farben.':'Hier liegt gerade kein Boot vor Anker.';
+  $('empty-description').textContent=state.favoritesOnly&&!source.length?'Tippe auf das Herz an einem Benchy, um dir die Farbe für später zu merken.':'Für diese Auswahl gibt es noch keinen Treffer. Probiere einen anderen Suchbegriff oder setze die Filter zurück.';
   $('search').value=state.q;$('sort').value=state.sort;
   keys.forEach(key=>{
-    const counts=core.facet(items,state,key),select=$(key);
+    const counts=core.facet(source,state,key),select=$(key);
     [...select.options].forEach(option=>{if(option.value){const n=counts.get(option.value)||0;option.textContent=`${filterValueLabel(key,option.value)} (${n})`;option.disabled=n===0&&option.value!==state[key];}});
     select.value=state[key];
   });
@@ -77,11 +102,12 @@ function render(){
   });
   active.hidden=!active.childElementCount;
   const count=keys.filter(k=>state[k]).length;$('mobile-filter-count').hidden=!count;$('mobile-filter-count').textContent=count;
-  writeURL();
+  syncFavoriteControls();writeURL();
 }
 function showPhoto(id,updateURL=true){
   const item=items.find(x=>x.id===id);if(!item)return;
   photoId=id;
+  $('detail-new').hidden=!core.isNew(item);$('share-status').textContent='';$('share-fallback').hidden=true;syncFavoriteControls();
   $('detail-title').textContent=item.name;$('detail-maker').textContent=item.manufacturer;
   $('detail-image').src=item.image;$('detail-image').alt=`${item.name} von ${item.manufacturer}`;
   $('detail-image').parentElement.style.setProperty('--photo-ratio',item.width/item.height);
@@ -95,7 +121,13 @@ function showPhoto(id,updateURL=true){
   if(updateURL)writeURL();
 }
 function movePhoto(direction){const list=visible.some(x=>x.id===photoId)?visible:items;const index=list.findIndex(x=>x.id===photoId);showPhoto(list[(index+direction+list.length)%list.length].id);}
-function reset(){keys.forEach(k=>state[k]='');state.q='';render();}
+function reset(){keys.forEach(k=>state[k]='');state.q='';state.favoritesOnly=false;render();}
+async function sharePhoto(){
+  const id=photoId;if(!id)return;
+  const url=core.photoURL(location.href,id);$('share-status').textContent='';$('share-fallback').hidden=true;
+  try{await navigator.clipboard.writeText(url);if(photoId===id)$('share-status').textContent='Link kopiert – du kannst ihn jetzt verschicken.';}
+  catch{if(photoId===id){$('share-link').value=url;$('share-fallback').hidden=false;$('share-status').textContent='Kopiere diesen Link und verschicke ihn.';$('share-link').focus();$('share-link').select();}}
+}
 async function load(){
   $('load-error').hidden=true;$('gallery').setAttribute('aria-busy','true');
   try{
@@ -103,7 +135,7 @@ async function load(){
     items=data.items.map((item,position)=>({...item,availability:Object.hasOwn(stockLabels,item.availability)?item.availability:'unknown',position}));
     const featured=['Minzcoktail – Pastel','Polarblau – Pastel','Rose – Pastel','Azurblau – rPLA','Bronzegold – Silky','Himbeerrot – Silky'];
     items.sort((a,b)=>{let x=featured.indexOf(a.name),y=featured.indexOf(b.name);return (x<0?999:x)-(y<0?999:y)||a.position-b.position;});items.forEach((x,i)=>x.position=i);
-    readState();setupFilters();$('search').disabled=false;$('sort').disabled=false;
+    readState();setupFilters();$('search').disabled=false;$('sort').disabled=false;$('favorites-view').disabled=false;
     const initialPhoto=photoId;render();if(initialPhoto)showPhoto(initialPhoto,false);
     const date=new Intl.DateTimeFormat('de',{dateStyle:'long'}).format(new Date(data.updated+'T12:00:00'));
     $('collection-stats').textContent=`${items.length} Benchys · Stand: ${date}`;
@@ -114,6 +146,10 @@ $('clear-search').onclick=()=>{state.q='';render();$('search').focus();};
 $('sort').onchange=event=>{state.sort=event.target.value;render();};
 $('reset').onclick=$('empty-reset').onclick=reset;
 $('retry').onclick=load;
+$('favorites-view').onclick=()=>{state.favoritesOnly=!state.favoritesOnly;render();};
+$('detail-favorite').onclick=()=>toggleFavorite(photoId);
+$('share-photo').onclick=sharePhoto;
+window.addEventListener('storage',event=>{if(event.key!==favoriteKey&&event.key!==null)return;try{const saved=JSON.parse(event.newValue||'[]');favorites=new Set(Array.isArray(saved)?saved.filter(id=>typeof id==='string'):[]);if(items.length)render();}catch{/* Keep the current list if another tab stores invalid data. */}});
 $('toggle-filters').onclick=()=>{const open=$('toggle-filters').getAttribute('aria-expanded')!=='true';$('toggle-filters').setAttribute('aria-expanded',String(open));$('filter-panel').classList.toggle('is-open',open);};
 $('close-detail').onclick=()=>dialog.close();
 dialog.addEventListener('click',event=>{if(event.target===dialog){const box=dialog.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)dialog.close();}});
