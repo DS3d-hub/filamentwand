@@ -7,6 +7,7 @@
     if(exclude!=='material'&&state.material&&item.material!==state.material)return false;
     if(exclude!=='color'&&state.color&&!item.colors.includes(state.color))return false;
     if(exclude!=='type'&&state.type&&!item.types.includes(state.type))return false;
+    if(exclude!=='availability'&&state.availability&&(item.availability||'unknown')!==state.availability)return false;
     const haystack=normalize([item.name,item.manufacturer,item.material,...item.colors,...item.types].join(' '));
     return normalize(state.q||'').trim().split(/\s+/).every(term=>haystack.includes(term));
   };
