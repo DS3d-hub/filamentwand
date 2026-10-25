@@ -1295,7 +1295,7 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Muster vorhanden · bestellbar"
+      "stockNote": "Bestellbar"
     },
     {
       "id": "f81f1ab1503a",
@@ -1424,7 +1424,7 @@
       "width": 1500,
       "height": 1304,
       "availability": "out_of_stock",
-      "stockNote": "Muster vorhanden · bestellbar"
+      "stockNote": "Bestellbar"
     },
     {
       "id": "dfb81c1b075e",
@@ -1873,7 +1873,7 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Muster vorhanden · bestellbar"
+      "stockNote": "Bestellbar"
     }
   ]
 }
