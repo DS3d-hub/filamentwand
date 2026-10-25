@@ -1422,8 +1422,8 @@
       "image": "assets/benchys/ec69f3b712aa.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "sample_only",
-      "stockNote": "Benchy-Muster vorhanden; Filament aufgebraucht."
+      "availability": "out_of_stock",
+      "stockNote": "Muster vorhanden · bestellbar"
     },
     {
       "id": "dfb81c1b075e",
@@ -1871,8 +1871,8 @@
       "image": "assets/benchys/ff541dc54fdd.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "sample_only",
-      "stockNote": "Benchy-Muster vorhanden; Filament aufgebraucht."
+      "availability": "out_of_stock",
+      "stockNote": "Muster vorhanden · bestellbar"
     }
   ]
 }

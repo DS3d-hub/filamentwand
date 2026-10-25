@@ -42,7 +42,7 @@ function card(item,index){
   const image=element('img');image.src=item.image;image.alt=`Gedrucktes Benchy: ${item.manufacturer}, ${item.name}`;image.width=item.width;image.height=item.height;image.loading=index<6?'eager':'lazy';image.decoding='async';
   visual.append(image);const watermark=element('span','photo-watermark','DS3d · Meine Filamentwand');watermark.setAttribute('aria-hidden','true');visual.append(watermark);const zoom=element('span','zoom-hint');zoom.setAttribute('aria-hidden','true');zoom.innerHTML='<svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7 10h6M10 7v6"/></svg>';visual.append(zoom);
   const body=element('div','card-body');const dot=element('span','color-dot');const swatch=item.colors.includes('Mehrfarbig')?swatches.Mehrfarbig:item.colors.length>1?'linear-gradient(135deg,'+item.colors.map(c=>swatches[c]||'#aeb7ae').join(',')+')':swatches[item.colors[0]]||'#aeb7ae';dot.style.setProperty('--swatch',swatch);dot.setAttribute('aria-hidden','true');
-  const text=element('div');const stock=element('p',`stock-badge stock-${item.availability}`,stockLabels[item.availability]);if(item.stockNote)stock.title=item.stockNote;text.append(element('h3','card-title',item.name),element('p','card-meta',`${item.manufacturer} · ${item.material}`),stock);body.append(dot,text);button.append(visual,body);
+  const text=element('div');const stock=element('p',`stock-badge stock-${item.availability}`,stockLabels[item.availability]);text.append(element('h3','card-title',item.name),element('p','card-meta',`${item.manufacturer} · ${item.material}`),stock);if(item.stockNote)text.append(element('p','stock-note',item.stockNote));body.append(dot,text);button.append(visual,body);
   button.onclick=()=>{focusedCard=button;showPhoto(item.id);};return button;
 }
 function render(){
@@ -72,6 +72,7 @@ function showPhoto(id,updateURL=true){
   $('detail-image').src=item.image;$('detail-image').alt=`${item.name} von ${item.manufacturer}`;
   $('detail-image').parentElement.style.setProperty('--photo-ratio',item.width/item.height);
   $('detail-stock').className=`stock-badge stock-${item.availability}`;$('detail-stock').textContent=stockLabels[item.availability];$('detail-stock').title=item.stockNote||'';
+  $('detail-stock-note').textContent=item.stockNote||'';$('detail-stock-note').hidden=!item.stockNote;
   $('detail-tags').replaceChildren(...[item.material,...item.types,...item.colors].map(x=>element('span','',x)));
   const navigation=visible.some(x=>x.id===id)?visible:items;
   $('previous').hidden=$('next').hidden=navigation.length<2;
