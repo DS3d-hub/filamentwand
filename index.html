@@ -9,9 +9,9 @@
   <title>DS3d – Meine Filamentwand</title>
   <link rel="icon" href="assets/boat.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=stock-2">
+  <link rel="stylesheet" href="styles.css?v=material-1">
   <script src="catalog-core.js?v=stock-1" defer></script>
-  <script src="app.js?v=stock-2" defer></script>
+  <script src="app.js?v=material-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sammlung">Zur Sammlung springen</a>
@@ -57,13 +57,17 @@
       <div id="load-error" class="empty-state" hidden><h3>Die Sammlung konnte nicht geladen werden.</h3><p>Bitte prüfe deine Verbindung und versuche es noch einmal.</p><button class="primary-button" id="retry" type="button">Erneut laden</button></div>
       <noscript><p>Bitte aktiviere JavaScript, damit du die Fotos und Filter dieser Galerie nutzen kannst.</p></noscript>
     </section>
+    <aside class="material-help" aria-labelledby="material-help-title">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M27 15a11 11 0 0 1-15 10l-8 3 2-8A11 11 0 1 1 27 15Z"/><path d="M11 13h10m-10 5h7"/></svg>
+      <div><h2 id="material-help-title">Farbe gefunden?</h2><p>Sag mir, was daraus werden soll – dann stimmen wir Material und Farbe passend ab.</p></div>
+    </aside>
   </main>
   <footer class="wrap site-footer"><div><strong>DS3d</strong><span>Mit Filamentliebe gedruckt.</span></div><p><span id="collection-stats"></span><span class="footer-note">Fotos zeigen die tatsächlichen Drucke. Die Farbwiedergabe hängt von Licht und Bildschirm ab.</span></p></footer>
   <dialog id="detail" aria-labelledby="detail-title">
     <div class="detail-shell">
       <button class="dialog-close" id="close-detail" aria-label="Foto schließen" type="button">×</button>
       <div class="detail-photo"><div class="detail-image-frame"><img id="detail-image" alt=""><span class="photo-watermark" aria-hidden="true">DS3d · Meine Filamentwand</span></div><button id="previous" class="photo-nav previous" aria-label="Vorheriges Benchy" type="button">‹</button><button id="next" class="photo-nav next" aria-label="Nächstes Benchy" type="button">›</button></div>
-      <div class="detail-info"><p id="detail-maker" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-stock" class="stock-badge"></p><p id="detail-stock-note" class="stock-note" hidden></p><div id="detail-tags" class="detail-tags"></div><p class="photo-hint">Originalaufnahme des gedruckten Benchys</p></div>
+      <div class="detail-info"><p id="detail-maker" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-stock" class="stock-badge"></p><p id="detail-stock-note" class="stock-note" hidden></p><div id="detail-tags" class="detail-tags"></div><div id="detail-material-guide"></div><p class="photo-hint">Originalaufnahme des gedruckten Benchys</p></div>
     </div>
   </dialog>
 </body>
