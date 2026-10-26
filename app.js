@@ -144,6 +144,10 @@ function showPhoto(id,updateURL=true){
   $('detail-stock').className=`stock-badge stock-${item.availability}`;$('detail-stock').textContent=stockLabels[item.availability];$('detail-stock').title=item.stockNote||'';
   $('detail-stock-note').textContent=item.stockNote||'';$('detail-stock-note').hidden=!item.stockNote;
   $('detail-tags').replaceChildren(...[item.material,...item.types,...item.colors].map(x=>element('span','',x)));
+  let shopUrl=null;try{const url=new URL(item.shopUrl);if(url.protocol==='https:')shopUrl=url.href;}catch{/* Entries without a checked shop link keep this section hidden. */}
+  $('detail-shop').hidden=!shopUrl;
+  if(shopUrl){$('detail-shop-link').href=shopUrl;$('detail-shop-link').setAttribute('aria-label',`${item.name} im offiziellen Shop ansehen (öffnet in neuem Tab)`);$('detail-shop-color').textContent=`Im Shop: ${item.shopProduct} · ${item.shopColor}`;}
+  else $('detail-shop-link').removeAttribute('href');
   const guide=materialGuide(item.material,true);$('detail-material-guide').replaceChildren(...(guide?[guide]:[]));
   const navigation=visible.some(x=>x.id===id)?visible:items;
   $('previous').hidden=$('next').hidden=navigation.length<2;

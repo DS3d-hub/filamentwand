@@ -27,3 +27,7 @@ Die Merkliste speichert ausschließlich Eintrags-IDs im localStorage des jeweili
 ## Farbvergleich
 
 Auf den Karten und im Fotodetail lassen sich bis zu vier Farben für den Vergleich auswählen. Die Auswahl bleibt beim Filtern und Wechseln zur Merkliste während des Seitenbesuchs erhalten. Ab zwei Farben öffnet die untere Auswahlleiste die Vergleichsansicht. Auf dem Handy stehen je zwei Fotos nebeneinander. Die Auswahl ist vorübergehend und wird nicht übertragen.
+
+## Hersteller-Shoplinks
+
+Geprüfte Einträge enthalten shopUrl (HTTPS), shopProduct, shopColor und shopCheckedAt. Die Großansicht verlinkt in einem neuen Tab direkt zur Produktvariante. Ohne hinterlegten Link erscheint kein Shop-Button. Die Verfügbarkeit in der Filamentwand bezeichnet den eigenen Bestand, nicht den Shopbestand. Bambu-Farben wurden am 26. Oktober 2026 anhand der offiziellen Produktvarianten zugeordnet; die dortigen Farbnamen können von älteren Bezeichnungen abweichen.

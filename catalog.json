@@ -1,7 +1,7 @@
 {
   "title": "DS3d – Meine Filamentwand",
   "description": "Meine bunte Flotte in einem Hafen voller Filament: echte Drucke, echte Farben und für jedes Filament ein kleines Boot. Schwimmfähigkeit ungeprüft, Filamentliebe garantiert",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "items": [
     {
       "id": "db0bce41d522",
@@ -1367,7 +1367,11 @@
       "image": "assets/benchys/e7deeb730e37.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-wood?id=53441583055196",
+      "shopColor": "Schwarze Walnuss (13107)",
+      "shopProduct": "PLA Wood",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c942fb45f57f",
@@ -1383,7 +1387,11 @@
       "image": "assets/benchys/c942fb45f57f.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/tpu-85a-tpu-90a?id=54085774541148",
+      "shopColor": "Schwarz (51103)",
+      "shopProduct": "TPU 90A",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "eaa7111d21c4",
@@ -1399,7 +1407,11 @@
       "image": "assets/benchys/eaa7111d21c4.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-translucent?id=54407223083356",
+      "shopColor": "Eisblau (13610)",
+      "shopProduct": "PLA Translucent",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f0ab0cc66713",
@@ -1415,7 +1427,11 @@
       "image": "assets/benchys/f0ab0cc66713.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-sparkle?id=43959190946011",
+      "shopColor": "Glitzerndes Onyx-Schwarz (13101)",
+      "shopProduct": "PLA Sparkle",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "dcd5017db5cd",
@@ -1431,7 +1447,11 @@
       "image": "assets/benchys/dcd5017db5cd.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-silk-upgrade?id=53583205957980",
+      "shopColor": "Gold-Rosa (13206)",
+      "shopProduct": "PLA Silk+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f6c146f905a5",
@@ -1447,7 +1467,11 @@
       "image": "assets/benchys/f6c146f905a5.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-silk-upgrade?id=53583205859676",
+      "shopColor": "Gold (13405)",
+      "shopProduct": "PLA Silk+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ec69f3b712aa",
@@ -1464,7 +1488,11 @@
       "width": 1500,
       "height": 1304,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-silk-multi-color?id=601314264425144336",
+      "shopColor": "Südstrand (13906)",
+      "shopProduct": "PLA Silk Multi-Color",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "dfb81c1b075e",
@@ -1480,7 +1508,11 @@
       "image": "assets/benchys/dfb81c1b075e.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=53951742509404",
+      "shopColor": "Heißes Pink (10204)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ea3ea6c1966d",
@@ -1496,7 +1528,11 @@
       "image": "assets/benchys/ea3ea6c1966d.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=42911328010459",
+      "shopColor": "Silber (10102)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "da818615b90d",
@@ -1512,7 +1548,11 @@
       "image": "assets/benchys/da818615b90d.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=599083438524203008",
+      "shopColor": "Mistelzweig-Grün (10502)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c2d628e1ddf0",
@@ -1528,7 +1568,11 @@
       "image": "assets/benchys/c2d628e1ddf0.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=53951741821276",
+      "shopColor": "Indigo-Violett (10701)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d7946bb75a6d",
@@ -1544,7 +1588,11 @@
       "image": "assets/benchys/d7946bb75a6d.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=53951748702556",
+      "shopColor": "Kakaobraun (10802)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "cd4f7b23cff6",
@@ -1560,7 +1608,11 @@
       "image": "assets/benchys/cd4f7b23cff6.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=43992829952219",
+      "shopColor": "Rot (10200)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c95e6b0d0dd9",
@@ -1576,7 +1628,11 @@
       "image": "assets/benchys/c95e6b0d0dd9.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=43992830017755",
+      "shopColor": "Schwarz (10101)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fafbe15602fc",
@@ -1592,7 +1648,11 @@
       "image": "assets/benchys/fafbe15602fc.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=43992829919451",
+      "shopColor": "Jade-Weiß (10100)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e08655a4b82a",
@@ -1608,7 +1668,11 @@
       "image": "assets/benchys/e08655a4b82a.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=53951744213340",
+      "shopColor": "Kürbis-Orange (10301)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "de70057c019e",
@@ -1624,7 +1688,11 @@
       "image": "assets/benchys/de70057c019e.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=46956524241244",
+      "shopColor": "Grau (10103)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e2f7ede5bb67",
@@ -1640,7 +1708,11 @@
       "image": "assets/benchys/e2f7ede5bb67.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=54004785217884",
+      "shopColor": "Cyan (10603)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fece86ae7301",
@@ -1656,7 +1728,11 @@
       "image": "assets/benchys/fece86ae7301.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=42911327977691",
+      "shopColor": "Beige (10201)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e34b70167ee0",
@@ -1672,7 +1748,11 @@
       "image": "assets/benchys/e34b70167ee0.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=46673378607452",
+      "shopColor": "Bambusgrün (10501)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c1f692262606",
@@ -1688,7 +1768,11 @@
       "image": "assets/benchys/c1f692262606.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=42911328043227",
+      "shopColor": "Gelb (10400)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f54a15358a53",
@@ -1704,7 +1788,11 @@
       "image": "assets/benchys/f54a15358a53.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=49299261423964",
+      "shopColor": "Dunkelgrau (10105)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ed5092458641",
@@ -1720,7 +1808,11 @@
       "image": "assets/benchys/ed5092458641.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=47794655101276",
+      "shopColor": "Bronze (10801)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c671206d1470",
@@ -1736,7 +1828,11 @@
       "image": "assets/benchys/c671206d1470.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=46738546622812",
+      "shopColor": "Blau (10601)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "de55278c89a9",
@@ -1752,7 +1848,11 @@
       "image": "assets/benchys/de55278c89a9.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-basic-filament?id=42911328207067",
+      "shopColor": "Braun (10800)",
+      "shopProduct": "PLA Basic",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f94bbd7208cf",
@@ -1768,7 +1868,11 @@
       "image": "assets/benchys/f94bbd7208cf.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/petg-hf?id=711341530253701148",
+      "shopColor": "Creme (33401)",
+      "shopProduct": "PETG HF",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "dab6772fb149",
@@ -1784,7 +1888,11 @@
       "image": "assets/benchys/dab6772fb149.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/petg-hf?id=49068714852700",
+      "shopColor": "Grau (33101)",
+      "shopProduct": "PETG HF",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e3ae9e75d014",
@@ -1800,7 +1908,11 @@
       "image": "assets/benchys/e3ae9e75d014.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/petg-hf?id=49068714754396",
+      "shopColor": "Schwarz (33102)",
+      "shopProduct": "PETG HF",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d8a10eb3b4a3",
@@ -1816,7 +1928,11 @@
       "image": "assets/benchys/d8a10eb3b4a3.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/petg-hf?id=49068714787164",
+      "shopColor": "Weiß (33100)",
+      "shopProduct": "PETG HF",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c4783ee3d162",
@@ -1832,7 +1948,11 @@
       "image": "assets/benchys/c4783ee3d162.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/petg-hf?id=49068714721628",
+      "shopColor": "Rot (33200)",
+      "shopProduct": "PETG HF",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d9f96d63febd",
@@ -1848,7 +1968,11 @@
       "image": "assets/benchys/d9f96d63febd.webp",
       "width": 1500,
       "height": 1306,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-metal?id=43959185244379",
+      "shopColor": "Metallisches Kobaltblau (13600)",
+      "shopProduct": "PLA Metal",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ffc7316646ad",
@@ -1864,7 +1988,11 @@
       "image": "assets/benchys/ffc7316646ad.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-matte?id=42996742684891",
+      "shopColor": "Sakura-Rosa (11201)",
+      "shopProduct": "PLA Matte",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c0601f54b828",
@@ -1880,7 +2008,11 @@
       "image": "assets/benchys/c0601f54b828.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-matte?id=43992833261787",
+      "shopColor": "Anthrazit (11101)",
+      "shopProduct": "PLA Matte",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "edf996d4dbb9",
@@ -1896,7 +2028,11 @@
       "image": "assets/benchys/edf996d4dbb9.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-matte?id=47794659164508",
+      "shopColor": "Dunkelrot (11202)",
+      "shopProduct": "PLA Matte",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ff541dc54fdd",
@@ -1913,7 +2049,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-glow?id=47396823597404",
+      "shopColor": "Leuchtend-Grün (15500)",
+      "shopProduct": "PLA Glow",
+      "shopCheckedAt": "2026-10-26"
     }
   ]
 }
