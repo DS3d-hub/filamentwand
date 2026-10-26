@@ -715,7 +715,11 @@
       "image": "assets/benchys/fefdefae8804.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://www.nobufil.com/product-page/petg-filament-candy-amethyst",
+      "shopProduct": "PETG Candy",
+      "shopColor": "Amethyst",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ecf8519fff1e",
@@ -731,7 +735,11 @@
       "image": "assets/benchys/ecf8519fff1e.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://www.nobufil.com/product-page/petg-filament-industrial-teal",
+      "shopProduct": "PETG",
+      "shopColor": "Industrial Teal",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fed25d1d6755",
@@ -747,7 +755,11 @@
       "image": "assets/benchys/fed25d1d6755.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://www.nobufil.com/product-page/petg-filament-candy-rose",
+      "shopProduct": "PETG Candy",
+      "shopColor": "Rosé",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d0d9ce6862f2",
@@ -763,7 +775,11 @@
       "image": "assets/benchys/d0d9ce6862f2.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://www.nobufil.com/product-page/petg-filament-pearl-white",
+      "shopProduct": "PETG",
+      "shopColor": "Pearl White",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e793060c35dd",
@@ -779,7 +795,11 @@
       "image": "assets/benchys/e793060c35dd.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://www.nobufil.com/product-page/petg-filament-candy-amber",
+      "shopProduct": "PETG Candy",
+      "shopColor": "Amber",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d81ffb994ec2",
