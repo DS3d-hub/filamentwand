@@ -767,15 +767,19 @@
       "image": "assets/benchys/e9783fb4fb48.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://esun3dstoreeu.com/products/pla-uv-color-change?VariantsId=12884",
+      "shopProduct": "PLA-UV Color Change",
+      "shopColor": "UV Change Fuchsia",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d3cf98c14ea0",
-      "name": "Lila – Standard",
+      "name": "Lila – Basic",
       "manufacturer": "eSun",
       "material": "PLA",
       "types": [
-        "Standard"
+        "Basic"
       ],
       "colors": [
         "Violett"
@@ -783,15 +787,19 @@
       "image": "assets/benchys/d3cf98c14ea0.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://esun3dstoreeu.com/products/epla?VariantsId=14103",
+      "shopProduct": "PLA-Basic",
+      "shopColor": "Purple",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d93e1964b93b",
-      "name": "Knochenweiß – Standard",
+      "name": "Knochenweiß – Basic",
       "manufacturer": "eSun",
       "material": "PLA",
       "types": [
-        "Standard"
+        "Basic"
       ],
       "colors": [
         "Weiß"
@@ -799,7 +807,11 @@
       "image": "assets/benchys/d93e1964b93b.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://esun3dstoreeu.com/products/epla?VariantsId=14121",
+      "shopProduct": "PLA-Basic",
+      "shopColor": "Bone White",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "eb11f13b0056",
