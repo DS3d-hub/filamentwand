@@ -623,7 +623,7 @@
     },
     {
       "id": "e9783fb4fb48",
-      "name": "Fuchsia – PLA UV",
+      "name": "Fuchsia – PLA UV · Reagiert auf Sonnenlicht",
       "manufacturer": "eSun",
       "material": "PLA",
       "types": [
@@ -1058,7 +1058,7 @@
     },
     {
       "id": "fd9a8640c315",
-      "name": "Grün – Glow in the Dark",
+      "name": "Grün – Glow in the Dark · Nachtleuchtend",
       "manufacturer": "Filament Unger",
       "material": "PLA",
       "types": [
@@ -2200,7 +2200,7 @@
     },
     {
       "id": "ff541dc54fdd",
-      "name": "Glow in the Dark Grün",
+      "name": "Glow in the Dark Grün · Nachtleuchtend",
       "manufacturer": "Bambu Lab",
       "material": "PLA",
       "types": [
