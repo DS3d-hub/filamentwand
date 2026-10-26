@@ -18,7 +18,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-silky-violett?variant=39782946177070",
+      "shopProduct": "PLA Silky",
+      "shopColor": "Violett",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c0b5041ef7c6",
@@ -35,7 +39,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/silky-pla-himbeerrot?variant=39659146117166",
+      "shopProduct": "PLA Silky",
+      "shopColor": "Himbeerrot",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d9509911def0",
@@ -52,7 +60,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-silky-leiches-rosa?variant=44682864820488",
+      "shopProduct": "PLA Silky",
+      "shopColor": "Leichtes Rot (Rosa)",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d5bd60facc9f",
@@ -70,7 +82,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/r-pla-orangebraun?variant=32272215277614",
+      "shopProduct": "R-PLA",
+      "shopColor": "Orangebraun",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c596008555bc",
@@ -86,7 +102,11 @@
       "image": "assets/benchys/c596008555bc.webp",
       "width": 1500,
       "height": 1300,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://redline-filament.com/products/pla-silky-goldbraun?variant=39782946045998",
+      "shopProduct": "PLA Silky",
+      "shopColor": "Goldbraun",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "daa5a03f5e0b",
@@ -103,7 +123,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/wizard-grun?variant=44596643463432",
+      "shopProduct": "PLA Wizard",
+      "shopColor": "Grün",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e29e6e282372",
@@ -120,7 +144,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-pastel-minzcocktail?variant=45130536812808",
+      "shopProduct": "PLA Pastel",
+      "shopColor": "Minzcocktail",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ffcfc6482919",
@@ -138,7 +166,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/silky-pla-bronzegold?variant=39659145887790",
+      "shopProduct": "PLA Silky",
+      "shopColor": "Bronzegold",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fa232ae38bb2",
@@ -155,7 +187,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/r-pla-rubinrot?variant=39660568576046",
+      "shopProduct": "R-PLA",
+      "shopColor": "Rubinrot",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e9776f1aa51c",
@@ -172,7 +208,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-pastel-polarblau?variant=45130533470472",
+      "shopProduct": "PLA Pastel",
+      "shopColor": "Polarblau",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e9934de92374",
@@ -189,7 +229,11 @@
       "width": 1500,
       "height": 1302,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-pastel-rose?variant=45130528391432",
+      "shopProduct": "PLA Pastel",
+      "shopColor": "Rosé",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c0233987e977",
@@ -206,7 +250,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/r-pla-azurblau?variant=39660565889070",
+      "shopProduct": "R-PLA",
+      "shopColor": "Azurblau",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "daa49af5d082",
@@ -224,7 +272,11 @@
       "width": 1500,
       "height": 1301,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/wizard-kohle-wizard?variant=44596644610312",
+      "shopProduct": "PLA Wizard",
+      "shopColor": "Kohle",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f23f6739c359",
@@ -243,7 +295,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/mystic-silky-pla-lila-weiss?variant=39683829727278",
+      "shopProduct": "PLA Mystic Silky",
+      "shopColor": "Lila-Weiß",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f1842d122a27",
@@ -262,7 +318,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/mystic-silky-pla-rot-schwarz?variant=51073626964232",
+      "shopProduct": "PLA Mystic Silky",
+      "shopColor": "Rot-Schwarz",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fc1ea0b2d007",
@@ -281,7 +341,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/mystic-silky-pla-grun-himbeerrot?variant=51073639612680",
+      "shopProduct": "PLA Mystic Silky",
+      "shopColor": "Grün-Himbeerrot",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "cf67d3e1c853",
@@ -298,7 +362,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-matt-capriblau?variant=39658948591662",
+      "shopProduct": "PLA Matt",
+      "shopColor": "Capriblau",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c8626c461b2b",
@@ -315,7 +383,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-eisengrau?variant=39658951442478",
+      "shopProduct": "PLA Matt",
+      "shopColor": "Eisengrau",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e26fe3b4f8ab",
@@ -332,7 +404,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/glitzer-pla-1?variant=8481503477806",
+      "shopProduct": "PLA Glitzer",
+      "shopColor": "Opalgrün",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f25ab51d6994",
@@ -349,7 +425,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/glitzer-pla-perlblau?variant=44680353186056",
+      "shopProduct": "PLA Glitzer",
+      "shopColor": "Perlblau",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "cc61e352a729",
@@ -365,7 +445,11 @@
       "image": "assets/benchys/cc61e352a729.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://redline-filament.com/products/glitzer-pla-1?variant=8481503412270",
+      "shopProduct": "PLA Glitzer",
+      "shopColor": "Oxidrot",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f71f9b84ee04",
@@ -384,7 +468,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-glitzer-transparent-goldglitzer?variant=44610995585288",
+      "shopProduct": "PLA Glitzer",
+      "shopColor": "Transparent (Goldglitzer)",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "cd74a00fd1bd",
@@ -401,7 +489,11 @@
       "width": 1500,
       "height": 1304,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/glitzer-pla-flip-flop-grun?variant=50142647189768",
+      "shopProduct": "PLA Glitzer",
+      "shopColor": "Flip Flop Grün",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fa9dfbdf6a1f",
@@ -418,7 +510,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/glitzer-pla-1?variant=8481503576110",
+      "shopProduct": "PLA Glitzer",
+      "shopColor": "Platinsilber",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d3f99cef1bc3",
@@ -435,7 +531,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-matt-kaminrot?variant=39659166105646",
+      "shopProduct": "PLA Matt",
+      "shopColor": "Kaminrot",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "cf5b2927079f",
@@ -452,7 +552,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/kopie-von-pla-matt-moosgrau?variant=39658949017646",
+      "shopProduct": "PLA Matt",
+      "shopColor": "Violett",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "eec9477302a9",
@@ -469,7 +573,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pet-g-schwarz?variant=39782945161262",
+      "shopProduct": "PLA Glitzer",
+      "shopColor": "Schwarz (Goldglitzer)",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "db62aad98b3a",
@@ -486,7 +594,11 @@
       "width": 1500,
       "height": 1304,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pet-g-gold?variant=39782945226798",
+      "shopProduct": "PLA Glitzer",
+      "shopColor": "Gold",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fb4d3899cb57",
@@ -502,7 +614,11 @@
       "image": "assets/benchys/fb4d3899cb57.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://redline-filament.com/products/asa-x-filament-blattgrun-1-75mm?variant=44666317996296",
+      "shopProduct": "ASA-X",
+      "shopColor": "Blattgrün",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fd4bbd8ea3a5",
@@ -519,7 +635,11 @@
       "width": 1500,
       "height": 1304,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/pla-magenta?variant=39658957865006",
+      "shopProduct": "PLA",
+      "shopColor": "Magenta",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d858268c57bc",
@@ -536,7 +656,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/asa-x-filament-dunkelsilber-1-75mm?variant=44666330939656",
+      "shopProduct": "ASA-X",
+      "shopColor": "Dunkelsilber",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ecb15e1c7178",
@@ -553,7 +677,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/asa-x-filament-schwarz-1-75mm?variant=31745108607022",
+      "shopProduct": "ASA-X",
+      "shopColor": "Schwarz",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fc53bf87e537",
@@ -570,7 +698,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://redline-filament.com/products/asa-x-filament-eisengrau-1-75mm?variant=31745112670254",
+      "shopProduct": "ASA-X",
+      "shopColor": "Eisengrau",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ccb34754bbb2",
