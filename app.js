@@ -61,7 +61,7 @@ function card(item,index){
   button.setAttribute('aria-label',`${item.name}, ${item.manufacturer}, ${item.material}, ${stockLabels[item.availability]} – Foto groß ansehen`);
   const visual=element('div','card-visual');
   const image=element('img');image.src=item.image;image.alt=`Gedrucktes Benchy: ${item.manufacturer}, ${item.name}`;image.width=item.width;image.height=item.height;image.loading=index<6?'eager':'lazy';image.decoding='async';
-  visual.append(image);const watermark=element('span','photo-watermark','DS3d · Meine Filamentwand');watermark.setAttribute('aria-hidden','true');visual.append(watermark);const zoom=element('span','zoom-hint');zoom.setAttribute('aria-hidden','true');zoom.innerHTML='<svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7 10h6M10 7v6"/></svg>';visual.append(zoom);
+  visual.append(image);const watermark=element('span','photo-watermark');watermark.setAttribute('aria-hidden','true');visual.append(watermark);const zoom=element('span','zoom-hint');zoom.setAttribute('aria-hidden','true');zoom.innerHTML='<svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7 10h6M10 7v6"/></svg>';visual.append(zoom);
   const body=element('div','card-body');const dot=element('span','color-dot');const swatch=item.colors.includes('Mehrfarbig')?swatches.Mehrfarbig:item.colors.length>1?'linear-gradient(135deg,'+item.colors.map(c=>swatches[c]||'#aeb7ae').join(',')+')':swatches[item.colors[0]]||'#aeb7ae';dot.style.setProperty('--swatch',swatch);dot.setAttribute('aria-hidden','true');
   const text=element('div');const stock=element('p',`stock-badge stock-${item.availability}`,stockLabels[item.availability]);text.append(element('h3','card-title',item.name),element('p','card-meta',`${item.manufacturer} · ${item.material}`),stock);if(item.stockNote)text.append(element('p','stock-note',item.stockNote));body.append(dot,text);button.append(visual,body);const guide=materialGuide(item.material);if(guide)button.append(guide);
   if(core.isNew(item))visual.append(element('span','new-badge','Neu'));
@@ -93,7 +93,7 @@ function syncComparison(){
   grid.replaceChildren(...selected.map(item=>{
     const panel=element('article','comparison-card');
     const visual=element('div','card-visual');const img=element('img');img.src=item.image;img.alt=`${item.name} von ${item.manufacturer}`;img.width=item.width;img.height=item.height;
-    const watermark=element('span','photo-watermark','DS3d · Meine Filamentwand');watermark.setAttribute('aria-hidden','true');visual.append(img,watermark);
+    const watermark=element('span','photo-watermark');watermark.setAttribute('aria-hidden','true');visual.append(img,watermark);
     const info=element('div','comparison-info');info.append(element('h3','card-title',item.name),element('p','card-meta',`${item.manufacturer} · ${item.material}`),element('p','comparison-type',item.types.join(' · ')),element('p',`stock-badge stock-${item.availability}`,stockLabels[item.availability]));
     if(item.stockNote)info.append(element('p','stock-note',item.stockNote));
     const remove=element('button','compare-remove','Entfernen');remove.type='button';remove.setAttribute('aria-label',`${item.name} aus dem Farbvergleich entfernen`);remove.onclick=()=>{toggleComparison(item.id);$('close-comparison').focus();};info.append(remove);panel.append(visual,info);return panel;
