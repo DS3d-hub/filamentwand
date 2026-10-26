@@ -687,11 +687,11 @@
     },
     {
       "id": "eed35e673604",
-      "name": "White – Standard",
+      "name": "White – Hyper PLA",
       "manufacturer": "Creality",
       "material": "PLA",
       "types": [
-        "Standard"
+        "Hyper PLA"
       ],
       "colors": [
         "Weiß"
@@ -699,7 +699,11 @@
       "image": "assets/benchys/eed35e673604.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://store.creality.com/de/products/hyper-speed-pla-1-75mm-filament-1kg?selectedVariantId=gid%3A%2F%2Fshopify%2FProductVariant%2F44759952818366",
+      "shopProduct": "Hyper PLA",
+      "shopColor": "Weiß",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fefdefae8804",
