@@ -1110,7 +1110,11 @@
       "image": "assets/benchys/fe504741a0a9.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-filament-tpu-1-75-mm-tpu-filament-3d-printing-materials-for-3d-printer-1-kg-1-spool-pale-pink?variant=62473721086111",
+      "shopProduct": "TPU 95A",
+      "shopColor": "Pale Pink",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "cff0eef41d81",
@@ -1126,7 +1130,11 @@
       "image": "assets/benchys/cff0eef41d81.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-filament-tpu-1-75-mm-tpu-filament-3d-printing-materials-for-3d-printer-1-kg-1-spool-telecom-grey-%E5%89%AF%E6%9C%AC?variant=62542043349151",
+      "shopProduct": "TPU 95A",
+      "shopColor": "Metallic Silver",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f2aa94da4ba2",
@@ -1142,7 +1150,11 @@
       "image": "assets/benchys/f2aa94da4ba2.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-filament-tpu-1-75-mm-tpu-filament-3d-printing-materials-for-3d-printer-1-kg-1-spool-fluorescent-rose-red-%E5%89%AF%E6%9C%AC?variant=62473719316639",
+      "shopProduct": "TPU 95A",
+      "shopColor": "Fluorescent Red",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d3c822070e62",
@@ -1158,7 +1170,11 @@
       "image": "assets/benchys/d3c822070e62.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/filament-tpu-1-75-mm-tinmorry-3d-printing-materials-tpu-filament-for-fdm-3d-printer-1-kg-1-spool-white?variant=45788620587167",
+      "shopProduct": "TPU 95A",
+      "shopColor": "White",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c783c586282f",
@@ -1174,7 +1190,11 @@
       "image": "assets/benchys/c783c586282f.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-filament-tpu-1-75-mm-tpu-filament-3d-printing-materials-for-3d-printer-1-kg-1-spool-fluorescent-purple-%E5%89%AF%E6%9C%AC?variant=62473720365215",
+      "shopProduct": "TPU 95A",
+      "shopColor": "Fluorescent Blue",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "c8e298a188d2",
@@ -1190,7 +1210,11 @@
       "image": "assets/benchys/c8e298a188d2.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/filament-tpu-1-75-mm-tinmorry-3d-printing-materials-tpu-filament-for-fdm-3d-printer-1-kg-1-spool-black?variant=42172358623391",
+      "shopProduct": "TPU 95A",
+      "shopColor": "Black",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "db8673872c42",
@@ -1206,7 +1230,11 @@
       "image": "assets/benchys/db8673872c42.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-filament-tpu-1-75-mm-tpu-filament-3d-printing-materials-for-3d-printer-1-kg-1-spool-fluorescent-green-%E5%89%AF%E6%9C%AC?variant=62473714827423",
+      "shopProduct": "TPU 95A",
+      "shopColor": "Fire Safety Orange",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e96714dd3b5c",
@@ -1222,7 +1250,11 @@
       "image": "assets/benchys/e96714dd3b5c.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/new-formula-pla-3d-printer-filament-1-75mm-1-kg-cyan-%E5%89%AF%E6%9C%AC?variant=62751215485087",
+      "shopProduct": "Rapid PLA",
+      "shopColor": "Lavender Pink",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "efb17b190ce1",
@@ -1238,7 +1270,11 @@
       "image": "assets/benchys/efb17b190ce1.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/new-formula-pla-3d-printer-filament-1-75mm-1-kg-grape-purple-%E5%89%AF%E6%9C%AC?variant=62751214534815",
+      "shopProduct": "Rapid PLA",
+      "shopColor": "Cyan",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d259512fca55",
@@ -1254,7 +1290,11 @@
       "image": "assets/benchys/d259512fca55.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-matte-pla-filament-1-75mm-pla-3d-printing-filament-compatible-with-bambu-lab-fdm-3d-printer-1-kg-1-spool-matte-skin-%E5%A4%8D%E5%88%B6?variant=59458672328863",
+      "shopProduct": "PLA Matte",
+      "shopColor": "Purple",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "caf272dd0b6b",
@@ -1270,7 +1310,11 @@
       "image": "assets/benchys/caf272dd0b6b.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-matte-pla-filament-1-75mm-pla-3d-printing-filament-compatible-with-bambu-lab-fdm-3d-printer-1-kg-1-spool-matte-red-%E5%A4%8D%E5%88%B6?variant=59459259793567",
+      "shopProduct": "PLA Matte",
+      "shopColor": "Light Green",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d02a52f2cdef",
@@ -1286,7 +1330,11 @@
       "image": "assets/benchys/d02a52f2cdef.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-matte-pla-filament-1-75mm-pla-3d-printing-filament-compatible-with-bambu-lab-fdm-3d-printer-1-kg-1-spool-matte-light-green-%E5%A4%8D%E5%88%B6?variant=59459415736479",
+      "shopProduct": "PLA Matte",
+      "shopColor": "Pink",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f3b345875e11",
@@ -1302,7 +1350,11 @@
       "image": "assets/benchys/f3b345875e11.webp",
       "width": 1500,
       "height": 1304,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-matte-pla-filament-1-75mm-pla-3d-printing-filament-compatible-with-bambu-lab-fdm-3d-printer-1-kg-1-spool-matte-pink-%E5%A4%8D%E5%88%B6?variant=59459541696671",
+      "shopProduct": "PLA Matte",
+      "shopColor": "Light Blue",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f6efa2b10dea",
@@ -1318,7 +1370,11 @@
       "image": "assets/benchys/f6efa2b10dea.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-matte-pla-filament-1-75mm-pla-3d-printing-filament-compatible-with-bambu-lab-fdm-3d-printer-1-kg-1-spool-matte-olive-green-%E5%89%AF%E6%9C%AC?variant=62442514940063",
+      "shopProduct": "PLA Matte",
+      "shopColor": "Navy Blue",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d1e18c77b1ef",
@@ -1335,7 +1391,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-pla-filament-1-75-mm-3d-printer-filament-dimensional-accuracy-0-03-mm-1-kg-spool-compatible-with-bambu-fdm-3d-printer-galaxy-blue-%E5%89%AF%E6%9C%AC?variant=62570496655519",
+      "shopProduct": "Galaxy PLA",
+      "shopColor": "Galaxy Green",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f81f1ab1503a",
@@ -1351,7 +1411,11 @@
       "image": "assets/benchys/f81f1ab1503a.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://tinmorry.net/en-de/products/tinmorry-glass-fiber-reinforced-petg-filament-high-impact-resistance-petg-gf-3d-printing-filament-durability-stiffness-perfect-compatible-with-bambu-lab-fdm-3d-printer-1-kg-1-spool-water-blue-%E5%89%AF%E6%9C%AC?variant=62570486661279",
+      "shopProduct": "Galaxy PLA",
+      "shopColor": "Galaxy Brown",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e7deeb730e37",
