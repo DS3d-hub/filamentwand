@@ -816,7 +816,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/pla-glimmer-pink?variant=48986824114523",
+      "shopColor": "Glimmer Pink",
+      "shopProduct": "PLA+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f97209fa6916",
@@ -833,7 +837,11 @@
       "width": 1500,
       "height": 1304,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/pla-turkis?variant=48986873397595",
+      "shopColor": "Türkis",
+      "shopProduct": "PLA+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ef4726f5642f",
@@ -850,7 +858,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/pla-metallic-aubergine?variant=48986870481243",
+      "shopColor": "Metallic Aubergine",
+      "shopProduct": "PLA+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f87bd502ae69",
@@ -867,7 +879,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/pla-anthrazitsilber?variant=48986413597019",
+      "shopColor": "Anthrazitsilber",
+      "shopProduct": "PLA+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f422f9bd5524",
@@ -884,7 +900,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/pla-vanille?variant=48986882212187",
+      "shopColor": "Vanille",
+      "shopProduct": "PLA+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "e68af9fb3af7",
@@ -901,7 +921,11 @@
       "width": 1500,
       "height": 1304,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/pla-natur?variant=48986486767963",
+      "shopColor": "Natur",
+      "shopProduct": "PLA+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "ebce980e7d8a",
@@ -918,7 +942,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/petg-signalweiss?variant=48986144866651",
+      "shopColor": "Signalweiß",
+      "shopProduct": "PETG",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "cf5fe769af62",
@@ -935,7 +963,11 @@
       "image": "assets/benchys/cf5fe769af62.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://filament-unger.de/products/petg-transparent-rot?variant=48986808779099",
+      "shopColor": "Transparent Rot",
+      "shopProduct": "PETG",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "da1115b160d4",
@@ -951,7 +983,11 @@
       "image": "assets/benchys/da1115b160d4.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://filament-unger.de/products/petg-anthrazitsilber?variant=48986783351131",
+      "shopColor": "Anthrazitsilber",
+      "shopProduct": "PETG",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "d9a2e11184d3",
@@ -968,7 +1004,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/petg-edelstahl?variant=48986776174939",
+      "shopColor": "Edelstahl",
+      "shopProduct": "PETG",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fdd06a2ee7db",
@@ -986,7 +1026,11 @@
       "width": 1500,
       "height": 1305,
       "availability": "out_of_stock",
-      "stockNote": "Bestellbar"
+      "stockNote": "Bestellbar",
+      "shopUrl": "https://filament-unger.de/products/petg-transparent-grun?variant=48986815234395",
+      "shopColor": "Transparent Grün",
+      "shopProduct": "PETG",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f4e8414a313d",
@@ -1002,7 +1046,11 @@
       "image": "assets/benchys/f4e8414a313d.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://filament-unger.de/products/petg-wasserblau?variant=48986648379739",
+      "shopColor": "Wasserblau",
+      "shopProduct": "PETG",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "fd9a8640c315",
@@ -1018,7 +1066,11 @@
       "image": "assets/benchys/fd9a8640c315.webp",
       "width": 1500,
       "height": 1305,
-      "availability": "in_stock"
+      "availability": "in_stock",
+      "shopUrl": "https://filament-unger.de/products/pla-glow-in-the-dark-grun?variant=48986634223963",
+      "shopColor": "Glow in the Dark Grün",
+      "shopProduct": "PLA+",
+      "shopCheckedAt": "2026-10-26"
     },
     {
       "id": "f35459364d31",
