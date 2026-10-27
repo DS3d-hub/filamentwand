@@ -4,6 +4,27 @@
   "updated": "2026-10-27",
   "items": [
     {
+      "id": "1cdcca3fcc78",
+      "name": "Schwarz – PLA-CF",
+      "manufacturer": "Bambu Lab",
+      "material": "PLA-CF",
+      "types": [
+        "Carbonfaser"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/1cdcca3fcc78.jpg",
+      "width": 3093,
+      "height": 2329,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://eu.store.bambulab.com/de/products/pla-cf?id=43944001994971",
+      "shopProduct": "PLA-CF",
+      "shopColor": "Schwarz (14100)",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
       "id": "244b528820e1",
       "name": "Smoke Grey – Candy",
       "manufacturer": "Nobufil",

@@ -13,6 +13,7 @@ const materialGuides={
   TPU:{label:'Flexibel & biegsam',description:'Für bewegliche Teile, Schutzkappen und rutschhemmende Füße. Wie weich oder biegsam das Teil wird, hängt von der Sorte und der Form ab.',icon:'<path d="M2 15c3-9 7-9 10-3s7 6 10-3"/>'}
 };
 materialGuides['PLA+']=materialGuides.PLA;
+materialGuides['PLA-CF']={label:'Steif & formstabil drinnen',description:'Kohlefaserverstärktes PLA für steife Halterungen, Gehäuse und Deko im Innenbereich. Bei Wärme oder stärkerer Belastung stimmen wir die Eignung vorher ab.',icon:materialGuides.PETG.icon};
 function materialGuide(material,detailed=false){
   const guide=materialGuides[material];if(!guide)return null;
   const box=element('div',detailed?'material-guide':'material-hint');
