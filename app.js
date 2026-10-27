@@ -31,14 +31,15 @@ try{const saved=JSON.parse(localStorage.getItem(favoriteKey)||'[]');if(Array.isA
 const heartIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
 const readState=()=>{
   const params=new URLSearchParams(location.search);
-  state={q:params.get('suche')||'',sort:params.get('sort')||'collection',favoritesOnly:state.favoritesOnly||false};
+  state={q:params.get('suche')||'',sort:params.get('sort')||(params.get('neu')==='1'?'newest':'collection'),favoritesOnly:state.favoritesOnly||false,newOnly:params.get('neu')==='1'};
   keys.forEach(key=>state[key]=params.get(key)||'');
-  if(!['collection','name','manufacturer','material'].includes(state.sort))state.sort='collection';
+  if(!['collection','name','manufacturer','material','newest'].includes(state.sort))state.sort='collection';
   photoId=params.get('benchy');
 };
 function writeURL(){
   const params=new URLSearchParams();
   if(state.q)params.set('suche',state.q);
+  if(state.newOnly)params.set('neu','1');
   keys.forEach(key=>{if(state[key])params.set(key,state[key]);});
   if(state.sort!=='collection')params.set('sort',state.sort);
   if(photoId)params.set('benchy',photoId);
@@ -117,9 +118,10 @@ function render(){
   $('gallery').replaceChildren(...visible.map(card));$('gallery').setAttribute('aria-busy','false');
   $('result-count').textContent=visible.length===items.length?`${items.length} Benchys · ${new Set(items.map(x=>x.manufacturer)).size} Hersteller`:`${visible.length} von ${items.length} Benchys`;
   $('empty').hidden=visible.length>0;$('clear-search').hidden=!state.q;
-  $('empty-title').textContent=state.favoritesOnly&&!source.length?'Deine Merkliste wartet auf ihre ersten Farben.':'Hier liegt gerade kein Boot vor Anker.';
-  $('empty-description').textContent=state.favoritesOnly&&!source.length?'Tippe auf das Herz an einem Benchy, um dir die Farbe für später zu merken.':'Für diese Auswahl gibt es noch keinen Treffer. Probiere einen anderen Suchbegriff oder setze die Filter zurück.';
+  $('empty-title').textContent=state.newOnly?'Gerade sind keine neuen Farben dabei.':state.favoritesOnly&&!source.length?'Deine Merkliste wartet auf ihre ersten Farben.':'Hier liegt gerade kein Boot vor Anker.';
+  $('empty-description').textContent=state.newOnly?(items.some(item=>core.isNew(item))?'Für diese Filterauswahl gibt es keine Ergänzungen der letzten neun Tage. Setze die Filter zurück oder wähle „Zuletzt ergänzt“ erneut.':'Hier erscheinen künftig alle Farben, die in den letzten neun Tagen hinzugekommen sind. Mit „Alle Benchys anzeigen“ gelangst du zur ganzen Flotte.'):state.favoritesOnly&&!source.length?'Tippe auf das Herz an einem Benchy, um dir die Farbe für später zu merken.':'Für diese Auswahl gibt es noch keinen Treffer. Probiere einen anderen Suchbegriff oder setze die Filter zurück.';
   $('search').value=state.q;$('sort').value=state.sort;
+  $('recent-view').setAttribute('aria-pressed',String(!!state.newOnly));$('recent-count').textContent=items.filter(item=>core.isNew(item)).length;
   keys.forEach(key=>{
     const counts=core.facet(source,state,key),select=$(key);
     [...select.options].forEach(option=>{if(option.value){const n=counts.get(option.value)||0;option.textContent=`${filterValueLabel(key,option.value)} (${n})`;option.disabled=n===0&&option.value!==state[key];}});
@@ -130,6 +132,7 @@ function render(){
     if(!state[key])return;
     const value=key==='q'?state[key]:filterValueLabel(key,state[key]);const chip=element('button','filter-chip',(key==='q'?'Suche':labels[key])+': '+value);chip.type='button';chip.setAttribute('aria-label',`${key==='q'?'Suche':labels[key]} ${value} entfernen`);chip.append(element('span','', '×'));chip.onclick=()=>{state[key]='';render();};active.append(chip);
   });
+  if(state.newOnly){const chip=element('button','filter-chip','Zuletzt ergänzt · 9 Tage ×');chip.type='button';chip.setAttribute('aria-label','Zuletzt ergänzt entfernen');chip.onclick=()=>{state.newOnly=false;render();};active.append(chip);}
   active.hidden=!active.childElementCount;
   const count=keys.filter(k=>state[k]).length;$('mobile-filter-count').hidden=!count;$('mobile-filter-count').textContent=count;
   syncFavoriteControls();syncComparison();writeURL();
@@ -155,7 +158,7 @@ function showPhoto(id,updateURL=true){
   if(updateURL)writeURL();
 }
 function movePhoto(direction){const list=visible.some(x=>x.id===photoId)?visible:items;const index=list.findIndex(x=>x.id===photoId);showPhoto(list[(index+direction+list.length)%list.length].id);}
-function reset(){keys.forEach(k=>state[k]='');state.q='';state.favoritesOnly=false;render();}
+function reset(){keys.forEach(k=>state[k]='');state.q='';state.favoritesOnly=false;state.newOnly=false;state.sort='collection';render();}
 async function sharePhoto(){
   const id=photoId;if(!id)return;
   const url=core.photoURL(location.href,id);$('share-status').textContent='';$('share-fallback').hidden=true;
@@ -169,7 +172,7 @@ async function load(){
     items=data.items.map((item,position)=>({...item,availability:Object.hasOwn(stockLabels,item.availability)?item.availability:'unknown',position}));
     const featured=['Minzcoktail – Pastel','Polarblau – Pastel','Rose – Pastel','Azurblau – rPLA','Bronzegold – Silky','Himbeerrot – Silky'];
     items.sort((a,b)=>{let x=featured.indexOf(a.name),y=featured.indexOf(b.name);return (x<0?999:x)-(y<0?999:y)||a.position-b.position;});items.forEach((x,i)=>x.position=i);
-    readState();setupFilters();$('search').disabled=false;$('sort').disabled=false;$('favorites-view').disabled=false;
+    readState();setupFilters();$('search').disabled=false;$('sort').disabled=false;$('favorites-view').disabled=false;$('recent-view').disabled=false;
     const initialPhoto=photoId;render();if(initialPhoto)showPhoto(initialPhoto,false);
     const date=new Intl.DateTimeFormat('de',{dateStyle:'long'}).format(new Date(data.updated+'T12:00:00'));
     $('collection-stats').textContent=`${items.length} Benchys · Stand: ${date}`;
@@ -180,6 +183,7 @@ $('clear-search').onclick=()=>{state.q='';render();$('search').focus();};
 $('sort').onchange=event=>{state.sort=event.target.value;render();};
 $('reset').onclick=$('empty-reset').onclick=reset;
 $('retry').onclick=load;
+$('recent-view').onclick=()=>{const show=!state.newOnly;if(show){keys.forEach(k=>state[k]='');state.q='';state.favoritesOnly=false;state.sort='newest';}else state.sort='collection';state.newOnly=show;render();};
 $('favorites-view').onclick=()=>{state.favoritesOnly=!state.favoritesOnly;render();};
 $('detail-favorite').onclick=()=>toggleFavorite(photoId);
 $('share-photo').onclick=sharePhoto;

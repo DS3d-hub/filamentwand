@@ -9,9 +9,9 @@
   <title>DS3d – Meine Filamentwand</title>
   <link rel="icon" href="assets/boat.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=harbor-2">
-  <script src="catalog-core.js?v=logo-1" defer></script>
-  <script src="app.js?v=logo-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=recent-1">
+  <script src="catalog-core.js?v=recent-1" defer></script>
+  <script src="app.js?v=recent-1" defer></script>
   <script src="harbor-counter.js?v=1" defer></script>
 </head>
 <body>
@@ -38,9 +38,11 @@
           <input id="search" type="search" placeholder="Farbe oder Filament suchen …" autocomplete="off" disabled>
           <button id="clear-search" type="button" aria-label="Suchtext löschen" hidden>×</button>
         </div>
+        <button id="recent-view" class="recent-view" type="button" aria-pressed="false" aria-describedby="recent-help" disabled><span aria-hidden="true">✦</span> Zuletzt ergänzt <span id="recent-count">0</span></button>
         <button id="favorites-view" class="favorites-view" type="button" aria-pressed="false" disabled>♡ Merkliste <span id="favorites-count">0</span></button>
         <button id="toggle-filters" class="filter-toggle" type="button" aria-expanded="false" aria-controls="filter-panel"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg><span>Filter</span><span id="mobile-filter-count" class="count-bubble" hidden></span><span class="chevron">⌄</span></button>
       </div>
+      <p id="recent-help" class="recent-help">Neue Farben auf einen Blick · Ergänzungen der letzten neun Tage.</p>
       <p id="favorites-help" class="favorites-help"></p>
       <div class="filter-panel" id="filter-panel">
         <div class="filter-fields">
@@ -56,7 +58,7 @@
     <section aria-label="Filamentgalerie">
       <div class="collection-bar">
         <div><h2>Die bunte Flotte</h2><p id="result-count" role="status" aria-live="polite">Die Sammlung wird geladen …</p></div>
-        <label class="sort-label"><span>Sortieren</span><select id="sort" disabled><option value="collection">Sammlung</option><option value="name">Farbe A–Z</option><option value="manufacturer">Hersteller A–Z</option><option value="material">Material A–Z</option></select></label>
+        <label class="sort-label"><span>Sortieren</span><select id="sort" disabled><option value="collection">Sammlung</option><option value="newest">Neueste zuerst</option><option value="name">Farbe A–Z</option><option value="manufacturer">Hersteller A–Z</option><option value="material">Material A–Z</option></select></label>
       </div>
       <div id="active-filters" class="active-filters" aria-label="Aktive Filter" hidden></div>
       <p class="comparison-intro">Farben kombinieren? Wähle bei zwei bis vier Benchys „Vergleichen“.</p>
