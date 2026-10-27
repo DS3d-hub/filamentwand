@@ -1,8 +1,29 @@
 {
   "title": "DS3d – Meine Filamentwand",
   "description": "Meine bunte Flotte in einem Hafen voller Filament: echte Drucke, echte Farben und für jedes Filament ein kleines Boot. Schwimmfähigkeit ungeprüft, Filamentliebe garantiert",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "items": [
+    {
+      "id": "244b528820e1",
+      "name": "Smoke Grey – Candy",
+      "manufacturer": "Nobufil",
+      "material": "PETG",
+      "types": [
+        "Candy"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/244b528820e1.jpg",
+      "width": 2927,
+      "height": 2204,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://www.nobufil.com/product-page/petg-filament-candy-smoke-grey",
+      "shopProduct": "PETG Candy",
+      "shopColor": "Smoke Grey",
+      "shopCheckedAt": "2026-10-27"
+    },
     {
       "id": "db0bce41d522",
       "name": "Violett – Silky",
