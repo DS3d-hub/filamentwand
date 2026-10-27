@@ -4,6 +4,27 @@
   "updated": "2026-10-27",
   "items": [
     {
+      "id": "38f7fb9cdbc1",
+      "name": "Marmor – PLA+",
+      "manufacturer": "Filament Unger",
+      "material": "PLA+",
+      "types": [
+        "Marmor"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/38f7fb9cdbc1.jpg",
+      "width": 3156,
+      "height": 2376,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://filament-unger.de/products/pla-marmor?variant=48986800128347",
+      "shopProduct": "PLA+",
+      "shopColor": "Marmor",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
       "id": "1cdcca3fcc78",
       "name": "Schwarz – PLA-CF",
       "manufacturer": "Bambu Lab",
