@@ -9,10 +9,11 @@
   <title>DS3d – Meine Filamentwand</title>
   <link rel="icon" href="assets/boat.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=recent-1">
+  <link rel="stylesheet" href="styles.css?v=soundtrack-1">
   <script src="catalog-core.js?v=recent-1" defer></script>
   <script src="app.js?v=recent-1" defer></script>
   <script src="harbor-counter.js?v=1" defer></script>
+  <script src="soundtrack.js?v=1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sammlung">Zur Sammlung springen</a>
@@ -30,6 +31,16 @@
   </section>
   </header>
   <main class="wrap" id="sammlung">
+    <section class="soundtrack" aria-labelledby="soundtrack-title">
+      <div class="soundtrack-heading"><span class="soundtrack-icon" aria-hidden="true">♪</span><div><h2 id="soundtrack-title">Meine Flotte hat einen Soundtrack</h2><p>Filamentwand · Musik an, Farben entdecken.</p></div></div>
+      <audio id="soundtrack-audio" controls preload="none" src="Filamentwand.mp3" aria-label="Filamentwand – der Soundtrack">Dein Browser unterstützt diesen Audioplayer nicht.</audio>
+      <div id="soundtrack-controls" class="soundtrack-controls" hidden>
+        <button id="soundtrack-toggle" class="soundtrack-toggle" type="button" aria-controls="soundtrack-audio"><span aria-hidden="true">▶</span> Lied abspielen</button>
+        <div class="soundtrack-progress"><label class="sr-only" for="soundtrack-seek">Position im Lied</label><input id="soundtrack-seek" type="range" min="0" max="100" step="0.1" value="0" disabled><div class="soundtrack-time"><span id="soundtrack-elapsed">0:00</span><span id="soundtrack-duration">–:––</span></div></div>
+        <label class="soundtrack-volume">Lautstärke<input id="soundtrack-volume" type="range" min="0" max="1" step="0.05" value="0.45"></label>
+      </div>
+      <p id="soundtrack-status" class="soundtrack-status" role="status">Startet erst nach deinem Klick.</p>
+    </section>
     <section class="catalog-tools" aria-label="Sammlung durchsuchen und filtern">
       <div class="search-row">
         <div class="search-field">
