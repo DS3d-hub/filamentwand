@@ -4,6 +4,237 @@
   "updated": "2026-10-27",
   "items": [
     {
+      "id": "9ad628fc873c",
+      "name": "Armee Blau – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/9ad628fc873c.jpg",
+      "width": 3133,
+      "height": 2359,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631458811961",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Army Blue",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "4dcfb9d0dfae",
+      "name": "Armee Rot – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/4dcfb9d0dfae.jpg",
+      "width": 3115,
+      "height": 2345,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631459106873",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Army Red",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "55ba0499c75b",
+      "name": "Asche Grau – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/55ba0499c75b.jpg",
+      "width": 3172,
+      "height": 2389,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631459205177",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Ash Grey",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "2800e2f340a9",
+      "name": "Baumwollweiß – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Weiß"
+      ],
+      "image": "assets/benchys/2800e2f340a9.jpg",
+      "width": 3487,
+      "height": 2626,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631458123833",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Cotton White",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "4d45ce7edd32",
+      "name": "Erdbraun – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Braun"
+      ],
+      "image": "assets/benchys/4d45ce7edd32.jpg",
+      "width": 3042,
+      "height": 2291,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631458222137",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Earth Brown",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "7e3b858b2609",
+      "name": "Fossil Grau – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Grau"
+      ],
+      "image": "assets/benchys/7e3b858b2609.jpg",
+      "width": 3146,
+      "height": 2369,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631458877497",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Fossil Grey",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "f55874d83e71",
+      "name": "Himmelblau – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Blau"
+      ],
+      "image": "assets/benchys/f55874d83e71.jpg",
+      "width": 3218,
+      "height": 2423,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631459336249",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Sky Blue",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "f8a87afc9b09",
+      "name": "Kohle Schwarz – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Schwarz"
+      ],
+      "image": "assets/benchys/f8a87afc9b09.jpg",
+      "width": 3114,
+      "height": 2344,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631458091065",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Charcoal Black",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "b528f72ed9c8",
+      "name": "Lava Rot – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Rot"
+      ],
+      "image": "assets/benchys/b528f72ed9c8.jpg",
+      "width": 3177,
+      "height": 2392,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631459074105",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Lava Red",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "945446b8f932",
+      "name": "Pastel Banane – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Gelb"
+      ],
+      "image": "assets/benchys/945446b8f932.jpg",
+      "width": 3373,
+      "height": 2540,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631458418745",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Pastel Banana",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
+      "id": "2c500b556246",
+      "name": "Savannah Gelb – Matt",
+      "manufacturer": "Polymaker",
+      "material": "PLA",
+      "types": [
+        "Matt"
+      ],
+      "colors": [
+        "Gelb"
+      ],
+      "image": "assets/benchys/2c500b556246.jpg",
+      "width": 3317,
+      "height": 2497,
+      "availability": "in_stock",
+      "addedAt": "2026-10-27",
+      "shopUrl": "https://shop.polymaker.com/de-eu/products/mattes-pla?variant=43631458484281",
+      "shopProduct": "Panchroma Matte PLA",
+      "shopColor": "Matte Savannah Yellow",
+      "shopCheckedAt": "2026-10-27"
+    },
+    {
       "id": "38f7fb9cdbc1",
       "name": "Marmor – PLA+",
       "manufacturer": "Filament Unger",
