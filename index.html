@@ -9,9 +9,10 @@
   <title>DS3d – Meine Filamentwand</title>
   <link rel="icon" href="assets/boat.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=logo-2">
+  <link rel="stylesheet" href="styles.css?v=harbor-2">
   <script src="catalog-core.js?v=logo-1" defer></script>
   <script src="app.js?v=logo-1" defer></script>
+  <script src="harbor-counter.js?v=1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#sammlung">Zur Sammlung springen</a>
@@ -23,6 +24,10 @@
       <p class="description">Meine bunte Flotte in einem Hafen voller Filament: echte Drucke, echte Farben und für jedes Filament ein kleines Boot.</p>
       <p class="tagline">Schwimmfähigkeit ungeprüft, Filamentliebe garantiert.</p>
     </div>
+  <section class="harbor-counter" aria-labelledby="harbor-counter-title">
+    <div class="harbor-counter-copy"><span class="harbor-counter-icon" aria-hidden="true">⚓</span><div><h2 id="harbor-counter-title">Hafenbesuche</h2><p id="harbor-counter-note">Aufrufe seit dem 27. Oktober 2026 · Mehrfachbesuche zählen mit.</p></div></div>
+    <div class="harbor-counter-total"><a id="harbor-counter-link" href="https://hits.sh/ds3d-hub.github.io/filamentwand/" target="_blank" rel="noopener noreferrer" aria-label="Hafenbesuche insgesamt – Zählerstatistik bei Hits in neuem Tab öffnen"><img id="harbor-counter-image" alt="Hafenbesuche insgesamt" height="28" hidden referrerpolicy="no-referrer"></a><span id="harbor-counter-status" role="status">Zähler wird geladen …</span><small>Zähler von <a href="https://hits.sh/about/" target="_blank" rel="noopener noreferrer">Hits</a></small></div>
+  </section>
   </header>
   <main class="wrap" id="sammlung">
     <section class="catalog-tools" aria-label="Sammlung durchsuchen und filtern">
@@ -65,6 +70,7 @@
       <div><h2 id="material-help-title">Farbe gefunden?</h2><p>Sag mir, was daraus werden soll – dann stimmen wir Material und Farbe passend ab.</p></div>
     </aside>
   </main>
+
   <footer class="wrap site-footer"><div><strong>DS3d</strong><span>Mit Filamentliebe gedruckt.</span></div><p><span id="collection-stats"></span><span class="footer-note">Fotos zeigen die tatsächlichen Drucke. Die Farbwiedergabe hängt von Licht und Bildschirm ab.</span></p></footer>
   <aside id="compare-tray" class="compare-tray" aria-label="Farbauswahl zum Vergleichen" hidden>
     <div class="compare-tray-inner"><div><strong id="compare-count"></strong><p id="compare-status" role="status" aria-live="polite"></p></div><div id="compare-selection" class="compare-selection"></div><div class="compare-tray-actions"><button id="open-comparison" class="primary-button" type="button" disabled>Farben vergleichen</button><button id="clear-comparison" class="reset" type="button">Auswahl leeren</button></div></div>
